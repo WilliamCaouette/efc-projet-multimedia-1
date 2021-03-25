@@ -4,44 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RS</title>
+    <title>Connexion/inscription</title>
 </head>
 <body>
-    <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
+    <div class="banner-video">
+        <video src="media/Airport.mp4" autoplay muted loop></video>
+    </div>
+    <div class="formulaire-authentification">
+        <form action="POST">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <input type="submit" name="log in" value="Log In" id="">
+        </form>
 
-
-
-    <?php 
-        include "db.php";
-        $request = "SELECT `id_projet`, `nom`, `type`, `url_media` FROM `projet`";
-        $sth->$dbh->prepare($requete);
-        $sth->execute();
-        $projets = $sth->fetchAll();
-
-        foreach($projets as $projet){
-            ?>
-            <div class="projet-card">
-                    <?php 
-                        if($projet['type'] === 'youtube'){
-                            ?>
-                                <div class="youtube-responsive">
-                                    <iframe width="1280" height="720" src="<?=$projet['url_media'];?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            <?php
-                        }
-                        else{
-                            ?>
-                                <div class="conteneur-vignette">
-                                    <img class="media-fluide" src="<?=$projet['url_media'];?>" alt="image représentant le projet">
-                                </div>
-                            <?php
-                        }
-                    ?>
-                    <h3><?=$projet['nom'];?></h3>
-                    <a href="detail-projet.php?id_projet=<?=$projet['id_projet'];?>">en savoire plus -></a>
-                </div>
-            <?php
-        }
-    ?>
+        <div class="button">
+            <p>Sing in</p>
+        </div>
+    </div>
 </body>
 </html>
