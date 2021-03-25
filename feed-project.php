@@ -40,9 +40,19 @@
                     <h3><?=$project['nom'];?></h3>
                     <a href="detail-projet.php?id_projet=<?=$project['id_projet'];?>">en savoire plus -></a>
                     <!-- créé la section Like -->
+                    <button class="btn-like">Like</button>
+                    <p class="nb-like" onclick=""><?=$project['likes'];?></p>
                 </div>
             <?php
         }
     ?>
 </body>
 </html>
+
+<!-- vérifier si ça marche
+    $id = $projet['id_projet'];
+    $likes = $projet['likes'];
+    $requestLike = 'UPDATE `projet` SET`likes`=:likes WHERE id_projet = :id_projet';
+    $sth->$dbh->prepare($requestLike);
+    $sth->execute();
+-->
