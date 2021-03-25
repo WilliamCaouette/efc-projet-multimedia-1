@@ -73,6 +73,7 @@ CREATE TABLE `projet` (
   `nom` varchar(150) NOT NULL,
   `type_media` varchar(10) NOT NULL,
   `url_media` text NOT NULL,
+  `likes` int(11) NOT NULL,
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
