@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: #444444;
 }
 
 header {
@@ -22,13 +24,24 @@ header {
     width: 100%;
 }
 
-input {
-    width: 100%;
-    padding: 15px;
-    margin: 5px auto;
-    border-radius: 1px;
-    border: 1px solid #ccc;
+label {
+    font-size: 1.3em;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 2% 1%;
+    margin: 2%;
+    width: 20%;
+    font-size: 1.2em;
     cursor: pointer;
+    line-height: inherit;
+    border-radius: 9px;
+    background: #444444;
+    color: #ff481f;
+    box-shadow: 5px 5px 10px #3b3b3b, -5px -5px 10px #4d4d4d;
 }
 
 .container-form {
@@ -38,6 +51,16 @@ input {
     padding: 20px;
     border: 1px solid #000;
     background-color: #666;
+}
+
+.container-select {
+    width: 50%;
+    display: block;
+    margin: 8% auto;
+    padding: 20px;
+    border-radius: 9px;
+    background: #444444;
+    box-shadow: 10px 10px 20px #3b3b3b, -10px -10px 20px #4d4d4d;
 }
 
 .form-box {
