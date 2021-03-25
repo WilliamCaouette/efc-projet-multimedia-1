@@ -13,7 +13,7 @@
 
     <?php 
         include "db.php";
-        $request = "SELECT `id_projet`, `nom`, `type`, `url_media` FROM `projet`";
+        $request = "SELECT `id_projet`, `nom`, `type_media`, `url_media` FROM `projet`";
         $sth->$dbh->prepare($requete);
         $sth->execute();
         $projects = $sth->fetchAll();
@@ -22,7 +22,7 @@
             ?>
             <div class="projet-card">
                     <?php 
-                        if($project['type'] === 'youtube'){
+                        if($project['type_media'] === 'youtube'){
                             ?>
                                 <div class="youtube-responsive">
                                     <iframe width="1280" height="720" src="<?=$project['url_media'];?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -39,7 +39,7 @@
                     ?>
                     <h3><?=$project['nom'];?></h3>
                     <a href="detail-projet.php?id_projet=<?=$project['id_projet'];?>">en savoire plus -></a>
-                    <!--créé la section Like -->
+                    <!-- créé la section Like -->
                 </div>
             <?php
         }

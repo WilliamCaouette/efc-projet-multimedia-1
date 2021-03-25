@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 23 mars 2021 à 18:12
+-- Généré le : jeu. 25 mars 2021 à 18:56
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.3
 
@@ -37,6 +37,20 @@ CREATE TABLE `conversation` (
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `emploies`
+--
+
+CREATE TABLE `emploies` (
+  `id_emploie` int(11) NOT NULL,
+  `titre` varchar(150) NOT NULL,
+  `salaire` int(10) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `id_entreprise` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `message`
 --
 
@@ -57,7 +71,7 @@ CREATE TABLE `message` (
 CREATE TABLE `projet` (
   `id_projet` int(11) NOT NULL,
   `nom` varchar(150) NOT NULL,
-  `type` varchar(10) NOT NULL,
+  `type_media` varchar(10) NOT NULL,
   `url_media` text NOT NULL,
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -89,6 +103,12 @@ ALTER TABLE `conversation`
   ADD PRIMARY KEY (`conversation_id`);
 
 --
+-- Index pour la table `emploies`
+--
+ALTER TABLE `emploies`
+  ADD PRIMARY KEY (`id_emploie`);
+
+--
 -- Index pour la table `message`
 --
 ALTER TABLE `message`
@@ -115,6 +135,12 @@ ALTER TABLE `utilisateur`
 --
 ALTER TABLE `conversation`
   MODIFY `conversation_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `emploies`
+--
+ALTER TABLE `emploies`
+  MODIFY `id_emploie` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `message`
