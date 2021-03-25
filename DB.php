@@ -15,7 +15,6 @@
         $dbh = new PDO($dsn, $utilisateur, $motPasse);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $dbh->exec('SET CHARACTER SET UTF8');
-        echo("connecté");
 
     } catch (PDOException $e) {
         echo('Échec lors de la connexion : ' . $e->getMessage());
