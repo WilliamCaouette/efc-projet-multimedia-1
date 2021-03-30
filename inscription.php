@@ -294,7 +294,8 @@
             <label for="establishment">establishment</label>
             <input type="text" name="etablissement" id="establishment">
         </div>
-        <input type="submit" value="Sing up">
+        <!--créé des bouttons radios pour choisire son avatare-->
+        <input type="submit" value="register">
     </form>
 </body>
 </html>

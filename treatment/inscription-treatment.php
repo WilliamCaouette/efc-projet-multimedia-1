@@ -11,7 +11,7 @@
     $etudes = $_POST['etudes'];
     $etablissement = $_POST['etablissement'];
     $pays = $_POST['pays'];
-    
+
     $request = "INSERT INTO `utilisateur`
     (`nom`, `prenom`, `bio`, `mot_de_passe`, `type`, `email`, `etudes`, `pays`, `etablissement`) VALUES 
     (:nom, :prenom, :bio, :mot_de_passe , :type , :email , :etudes , :pays , :etablissement )";
@@ -30,4 +30,13 @@
 
     $sth->execute();
 
+// vérification si le mail est déjà prit
+
+/**
+ * si tout est correct
+ * header('Location: ../index.php');
+ * sinon 
+ * header('Location: ../inscription.php?error="mail-used"');
+ * 
+ */
 ?>
