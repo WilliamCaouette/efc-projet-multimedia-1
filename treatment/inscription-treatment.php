@@ -12,9 +12,7 @@
     $etablissement = $_POST['etablissement'];
     $pays = $_POST['pays'];
 
-    $request = "INSERT INTO `utilisateur`
-    (`nom`, `prenom`, `bio`, `mot_de_passe`, `type`, `email`, `etudes`, `pays`, `etablissement`) VALUES 
-    (:nom, :prenom, :bio, :mot_de_passe , :type , :email , :etudes , :pays , :etablissement )";
+    $request = "INSERT INTO `utilisateur`(`nom`, `prenom`, `bio`, `mot_de_passe`, `type`, `email`, `etudes`, `pays`, `etablissement`) VALUES (:nom, :prenom, :bio, :mot_de_passe , :type , :email , :etudes , :pays , :etablissement )";
 
     $sth = $dbh->prepare($request);
 
@@ -33,7 +31,7 @@
 // vérification si le mail est déjà prit
 
 /**
- * si tout est correct
+ * si un select avec le mail dans la base de données ne retourne aucune ligne
  * header('Location: ../index.php');
  * sinon 
  * header('Location: ../inscription.php?error="mail-used"');
