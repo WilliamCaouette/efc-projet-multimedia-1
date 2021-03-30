@@ -14,10 +14,12 @@
     <?php 
         include "db.php";
         $request = "SELECT `id_projet`, `nom`, `type_media`, `url_media` FROM `projet`";
-        $sth->$dbh->prepare($requete);
+        $sth = $dbh->prepare($request);
         $sth->execute();
         $projects = $sth->fetchAll();
-
+        function writeMsg() {
+            echo "Hello world!";
+          }
         foreach($projects as $project){
             ?>
             <div class="projet-card">
@@ -53,6 +55,6 @@
     $id = $projet['id_projet'];
     $likes = $projet['likes'];
     $requestLike = 'UPDATE `projet` SET`likes`=:likes WHERE id_projet = :id_projet';
-    $sth->$dbh->prepare($requestLike);
+    $sth = $dbh->prepare($requestLike);
     $sth->execute();
 -->
