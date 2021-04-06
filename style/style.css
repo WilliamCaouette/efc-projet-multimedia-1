@@ -14,9 +14,20 @@ header {
     background-color: #222;
     color: #fff;
     height: 200px;
+    font-size: 1.4em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #222;
+    color: #fff;
 }
 
 .container {
