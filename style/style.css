@@ -100,6 +100,11 @@ select {
     height: auto;
 }
 
-input[type="radio"]:checked+label img {
+input[type="radio"]:checked+label img,
+input[type="radio"]:not(:checked) {
     box-shadow: inset -20px -20px 60px #2e2e2e, inset 20px 20px 60px #3e3e3e;
+}
+
+input[type="radio"] {
+    width: 100%;
 }
