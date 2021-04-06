@@ -20,6 +20,11 @@ header {
     align-items: center;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 footer {
     height: 120px;
     display: flex;
@@ -80,7 +85,7 @@ select {
 }
 
 
-/* Avatar box */
+/*-- Avatar box --*/
 
 .container-avatar {
     width: 50%;
@@ -118,4 +123,41 @@ input[type="radio"]:not(:checked) {
 
 input[type="radio"] {
     width: 100%;
+}
+
+
+/*-- Classe pour le feed --*/
+
+.content {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*-- Classe vidéo --*/
+
+.youtube-responsive {
+    width: 50%;
+    margin: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+
+/*-- Classe image --*/
+
+.conteneur-vignette {
+    width: 50%;
+    margin: 10px;
+}
+
+.media-fluide {
+    width: 100%;
+    height: auto;
 }
