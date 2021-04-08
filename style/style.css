@@ -130,31 +130,37 @@ input[type="radio"] {
 
 .content {
     width: 90%;
-    margin: 0;
     padding: 10px;
+    margin: 5% 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
 /*-- Classe vidéo --*/
 
 .youtube-responsive {
-    width: 50%;
-    margin: 10px;
+    position: relative;
+    flex-basis: 50%;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
 iframe {
+    border: #2e2e2e 4px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
 /*-- Classe image --*/
 
 .conteneur-vignette {
-    width: 50%;
-    margin: 10px;
+    position: relative;
+    flex-basis: 50%;
 }
 
 .media-fluide {
