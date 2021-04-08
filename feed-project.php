@@ -14,14 +14,11 @@
     ?>
 
     <?php 
-        /*include "db.php";
+        include "db.php";
         $request = "SELECT `id_projet`, `nom`, `type_media`, `url_media` FROM `projet`";
         $sth = $dbh->prepare($request);
         $sth->execute();
         $projects = $sth->fetchAll();
-        function writeMsg() {youtube-responsive
-            echo "Hello world!";
-          }*/
           ?>
           <section class="content">
               <div class="youtube-responsive">
@@ -35,7 +32,7 @@
               </div>
           </section>
           <?php
-        /*foreach($projects as $project){
+        foreach($projects as $project){
             ?>
             <div class="projet-card">
                     <?php 
@@ -61,7 +58,7 @@
                     <p class="nb-like" onclick=""><?=$project['likes'];?></p>
                 </div>
             <?php
-        }*/
+        }
     ?>
     <!-- intégrer ici le footer -->
     <?php
