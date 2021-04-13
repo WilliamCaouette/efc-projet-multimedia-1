@@ -1,9 +1,18 @@
 <?php
     include "db.php";
     
-    $requete = "SELECT `id_emploie`, `titre`, `salaire`, `type`, `id_entreprise`, `id_user` FROM `emploies`ORDER BY `id_emploie` DESC";
+    if(!isset($_GET['id_user'])){
+        $requete = "SELECT `id_emploie`, `titre`, `salaire`, `type`, `id_entreprise`, `id_user` FROM `emploies`ORDER BY `id_emploie` DESC";
+        $sth = $dbh->prepare($requete);
+    }
+    else{
+        $requete = "SELECT `id_emploie`, `titre`, `salaire`, `type`, `id_entreprise`, `id_user` FROM `emploies` WHERE `id_user` = :id_user ORDER BY `id_emploie` DESC";
+        $sth = $dbh->prepare($requete);
+        $sth->bindParam(':id_user', $_GET['id_user'], PDO::PARAM_INT);
+    }
+    
         
-    $sth = $dbh->prepare($requete);
+    
 
     $sth->execute();
 
@@ -30,10 +39,5 @@
             array("message"=>"aucun projets n'a été trouver")
         ));
     }
-
-
-
-
-
 
 ?>
