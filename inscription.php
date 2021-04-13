@@ -17,8 +17,8 @@
             <input type="text" name="nom" id="nom">
         </div>
         <div>
-            <label for="mail">Email</label>
-            <input type="text" name="email" id="mail">
+            <label for="mail">username</label>
+            <input type="text" name="username" id="username">
         </div>
         <div>
         <label for="country">Country</label>
@@ -285,14 +285,6 @@
         <div>
             <label for="mot_de_passe">Password</label>
             <input type="password" name="mot_de_passe" id="mot_de_passe">
-        </div>
-        <div>
-            <label for="Study">Study</label>
-            <input type="text" name="etudes" id="Study">
-        </div>
-        <div>
-            <label for="establishment">establishment</label>
-            <input type="text" name="etablissement" id="establishment">
         </div>
         <!--créé des bouttons radios pour choisire son avatare-->
         <input type="submit" value="register">

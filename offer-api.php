@@ -31,7 +31,8 @@
 
         print_r(json_encode($offers, JSON_UNESCAPED_UNICODE));
 
-    }else{
+    }
+    else{
 
         http_response_code(404);
 

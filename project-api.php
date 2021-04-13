@@ -29,7 +29,8 @@
 
         print_r(json_encode($projects, JSON_UNESCAPED_UNICODE));
 
-    }else{
+    }
+    else{
 
         http_response_code(404);
 
@@ -37,10 +38,5 @@
             array("message"=>"aucun projets n'a été trouver")
         ));
     }
-
-
-
-
-
 
 ?>
