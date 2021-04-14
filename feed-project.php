@@ -23,7 +23,7 @@
     ?>
 
     <header>
-        <h2>Accueil</h2>
+        <h2>Projets</h2>
     </header>
 
     <main>
