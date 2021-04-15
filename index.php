@@ -17,11 +17,11 @@
                 <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
             </div>
             <form action="POST">
-                <div>
-                    <input type="text" name="username" id="username">
+                <div class="box-identification">
+                    <input type="text" name="username" id="username" placeholder="xyz@gmail.com">
                 </div>
-                <div>
-                    <input type="password" name="password" id="password">
+                <div class="box-identification">
+                    <input type="password" name="password" id="password" placeholder="password">
                 </div>
                 <input type="submit" name="Connexion" value="Connexion" id="">
             </form>

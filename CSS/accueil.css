@@ -68,8 +68,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
+}
+
+
+/* Input pour l'identifiant */
+
+.box-identification {
+    transform: translateX(-25%);
 }
 
 .formulaire-authentification form input[type="text"] {
@@ -80,11 +86,35 @@ main {
     box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
+
+/* Input pour le mot de passe  */
+
 .formulaire-authentification form input[type="password"] {
     padding: 10% 20%;
     border-radius: 5px;
     border: none;
     background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+}
+
+
+/* Input pour le submit du bouton connexion */
+
+.formulaire-authentification form input[type="submit"] {
+    width: 60%;
+    padding: 5% 10%;
+    border-radius: 80px;
+    color: #ff6646;
+    font-size: 1.4em;
+    border: none;
+    background: #f0f1f5;
+    box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    /* La transition avec le hoover ne fonctionne pas à cause du inset du box-shadow */
+    transition: all 450ms ease-in;
+}
+
+.formulaire-authentification form input[type="submit"]:hover {
     box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
@@ -94,7 +124,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 25%;
 }
 
 .button a {
