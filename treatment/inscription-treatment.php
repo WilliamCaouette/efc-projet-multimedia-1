@@ -1,36 +1,34 @@
-<?php
+<?php 
 
-    include "../db.php";
+    $utilsateur = filter_var_array($_POST, array(
+        'mail' => FILTER_SANITIZE_EMAIL,
+        'password' => FILTER_SANITIZE_STRING
+    ));
 
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $mot_de_passe = $_POST['mot_de_passe'];
-    $username = $_POST['username'];
-    $bio = $_POST['bio'];
-    $type = $_POST['type_membre'];
-    $pays = $_POST['pays'];
+    
+    if (!filter_var($utilsateur['mail'], FILTER_VALIDATE_EMAIL)) {
+            echo("Le format du courriel est invalide.");
+    }
+    else {
 
-    $request = "INSERT INTO `utilisateur`(`nom`, `prenom`, `bio`, `mot_de_passe`, `type`, `username`, `pays`) VALUES (:nom, :prenom, :bio, :mot_de_passe , :type , :email ,:pays)";
+        try {
+            include "../db.php";
 
-    $sth = $dbh->prepare($request);
+            $motPasseSecurise = password_hash($utilsateur['password'], PASSWORD_BCRYPT);
 
-    $sth->bindParam(':nom', $nom, PDO::PARAM_STR);
-    $sth->bindParam(':prenom', $prenom, PDO::PARAM_STR);
-    $sth->bindParam(':username', $username, PDO::PARAM_STR);
-    $sth->bindParam(':type', $type, PDO::PARAM_STR);
-    $sth->bindParam(':pays', $pays, PDO::PARAM_STR);
-    $sth->bindParam(':bio', $bio, PDO::PARAM_STR);
-    $sth->bindParam(':mot_de_passe', $mot_de_passe, PDO::PARAM_STR);
+            $sth = $dbh->prepare("INSERT INTO `utilisateur`(`mail`, `password`) VALUES (:mail, :password);");
 
-    $sth->execute();
+            $sth->bindParam(':mail', $utilsateur['mail'], PDO::PARAM_STR);
+       
+            if ($sth->execute()) {
+                echo("Succès lors de la création du compte.");
+            } else {
+                echo("Erreur lors de la création du compte.");
+            }
+        } catch (\Throwable $e) {
+            echo("Erreur lors de la création du compte.");
+            echo($e->getMessage());
+        }
+    }
 
-// vérification si le mail est déjà prit
-
-/**
- * si un select avec le mail dans la base de données ne retourne aucune ligne
- * header('Location: ../index.php');
- * sinon 
- * header('Location: ../inscription.php?error="mail-used"');
- * 
- */
 ?>
