@@ -20,6 +20,7 @@
                                WHERE `courriel` = :courriel");
 
         $sth->bindParam(':courriel', $utilsateur['mail'], PDO::PARAM_STR);
+        $sth->bindParam(':mot_passe', $utilsateur['password'], PDO::PARAM_STR);
         ?>
 
         <div class="centrer centrer-texte">
