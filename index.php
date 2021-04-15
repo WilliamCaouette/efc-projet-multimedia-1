@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!empty($_SESSION['utilisateur'])) {
+        header('Location: feed-project.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -1,6 +1,6 @@
 <?php
     if (!empty($_SESSION['utilisateur'])) {
-        header('Location: page-securisee.php');
+        header('Location: ../feed-project.php');
     }
 
 
@@ -10,18 +10,16 @@
 
 
         $utilsateur = filter_var_array($_POST, array(
-            'courriel' => FILTER_SANITIZE_EMAIL,
-            'mot_passe' => ['filter' => FILTER_SANITIZE_STRING,
+            'mail' => FILTER_SANITIZE_EMAIL,
+            'password' => ['filter' => FILTER_SANITIZE_STRING,
                             'options' => FILTER_FLAG_STRIP_HIGH]
         ));
 
-        // Pour ajouter un contexte, la date de suppression doit être vide.
-        $sth = $dbh->prepare("SELECT `id_utilisateur`, `courriel`, `mot_passe`, `date_creation`
+        $sth = $dbh->prepare("SELECT `id_utilisateur`, `courriel`, `mot_passe`
                                 FROM `utilisateur` 
-                               WHERE `courriel` = :courriel 
-                                 AND `date_suppression` IS NULL;");
+                               WHERE `courriel` = :courriel");
 
-        $sth->bindParam(':courriel', $utilsateur['courriel'], PDO::PARAM_STR);
+        $sth->bindParam(':courriel', $utilsateur['mail'], PDO::PARAM_STR);
         ?>
 
         <div class="centrer centrer-texte">
@@ -30,25 +28,15 @@
             echo("Succès lors de la récupération du compte.");
             
             $utilisateurTrouve = $sth->fetch(PDO::FETCH_ASSOC);
+            if(password_verify($utilsateur["password"], $utilisateurTrouve['password'])) {
 
-            /*
-                Comparez le mot de passe saisit avec celui dans la base de données.
-            */
-            if(password_verify($utilsateur["mot_passe"], $utilisateurTrouve['mot_passe'])) {
-
-                /* 
-                    Conservez les informations de l'usager dans la variable `utilisateur`. 
-                    Cette variable sera incluse dans la super variable globale `$_SESSION`.
-                */
                 $_SESSION['utilisateur'] = array(
                     'id_utilisateur' => $utilisateurTrouve['id_utilisateur'],
-                    'courriel' => $utilisateurTrouve['courriel'],
-                    'mot_passe' => $utilisateurTrouve['mot_passe'],
-                    'date_creation' => $utilisateurTrouve['date_creation']
+                    'courriel' => $utilisateurTrouve['mail'],
+                    'mot_passe' => $utilisateurTrouve['password']
                 );
             
-                // Redirigez l'utilisateur authentifé vers la page sécurisée.
-                header('Location: page-securisee.php');
+                header('Location: ../feed-project.php');
             }
             else {
                 echo("Connexion impossible avec ces informations.");
