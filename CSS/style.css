@@ -124,6 +124,9 @@ select {
     height: auto;
 }
 
+
+/* Neumorphisme input radio */
+
 .neumorphisme-box input[type="radio"]:checked+label img,
 input[type="radio"]:not(:checked) {
     background: linear-gradient(#2e2e2e, #3e3e3e);
@@ -133,6 +136,9 @@ input[type="radio"]:not(:checked) {
     width: 100%;
     display: none;
 }
+
+
+/* Neumorphisme input submit */
 
 
 /*-- Classe pour le feed --*/
