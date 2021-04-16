@@ -33,7 +33,7 @@
 
 
         } 
-        catch (\Throwable $e) {
+        catch (Throwable $e) {
             echo("Erreur lors de la création du compte.");
             echo($e->getMessage());
         }

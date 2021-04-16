@@ -49,7 +49,7 @@
         ?>
         </div>
         <?php
-    } catch (\Throwable $e) {
+    } catch (Throwable $e) {
         echo("Erreur lors de l'authentification.");
         echo($e->getMessage());
     }
