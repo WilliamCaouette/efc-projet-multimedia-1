@@ -3,85 +3,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /*-- Classe Basique --*/
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    background-color: #f0f1f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f1f5;
 }
 
 main {
-    width: 80%;
-    margin: 5% auto;
-    border: red 2px solid;
+  width: 80%;
+  margin: 5% auto;
 }
-
 
 /*-- Logo --*/
 
 .logo h1 {
-    width: 30%;
-    margin: auto;
-    margin-bottom: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.6em;
-    color: #ff6646;
-    font-family: neue-haas-grotesk-display, sans-serif;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6em;
+  color: #ff6646;
+  font-family: neue-haas-grotesk-display, sans-serif;
 }
 
 .logo h1 img {
-    flex-basis: 20%;
+  flex-basis: 20%;
 }
 
 .media-fluide {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 
 /* Les différents container */
 
 .inscription-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .select-account-container {
-    flex-basis: 100%;
-    padding: 10px;
+  flex-basis: 100%;
+  padding: 10px;
 }
 
 .identity-container {
-    flex-basis: 50%;
-    padding: 10px;
+  flex-basis: 50%;
+  padding: 10px;
 }
 
 .identity-container div {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 .bio-container {
-    position: relative;
-    float: right;
-    flex-basis: 50%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  float: right;
+  flex-basis: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bio-container div textarea {
-    resize: none;
-    vertical-align: top;
-    width: 70%;
-    justify-content: center;
+  resize: none;
+  vertical-align: top;
+  width: 70%;
+  justify-content: center;
 }
