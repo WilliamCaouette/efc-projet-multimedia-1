@@ -43,7 +43,7 @@
 
 
 
-    } catch (\Throwable $th) {
+    } catch (Throwable $th) {
         echo("Erreur lors de la création du post.");
         echo($e->getMessage());
     }
