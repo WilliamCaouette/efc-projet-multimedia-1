@@ -25,7 +25,7 @@
         include "header.php";
     ?>
     <section class="form-publication">
-        <form action="post-project-treatment" method="post">
+        <form action="treatment/post-project-treatment.php" method="post">
             <div>
                 <label for="title">Titre <span class="icone-obligatoire">*</span></label>
                 <input type="text" name="title" placeholder="titre">
@@ -57,7 +57,8 @@
 
         </section>
     </main>
-
+    <!-- À RETIRER PLUS TARD SERT JUSTE POUR LE DEV EN ATTENDANT LE MENU-->
+    <a href="treatment/disconnect.php">disconnect</a>
     <!--Template mustache mettre dans un views--> 
     <!----> 
     <section class="bas-de-page-static">
