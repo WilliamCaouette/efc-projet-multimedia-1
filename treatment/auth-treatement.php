@@ -16,7 +16,7 @@
                             'options' => FILTER_FLAG_STRIP_HIGH]
         ));
         
-        $sth = $dbh->prepare("SELECT `utilisateur_id`, `mail`, `password`
+        $sth = $dbh->prepare("SELECT `utilisateur_id`, `mail`, `password`, `type`
                                 FROM `utilisateur` 
                                WHERE `mail` = :mail");
       
@@ -32,7 +32,8 @@
                 $_SESSION['utilisateur'] = array(
                     'utilisateur_id' => $utilisateurTrouve['utilisateur_id'],
                     'mail' => $utilisateurTrouve['mail'],
-                    'password' => $utilisateurTrouve['password']
+                    'password' => $utilisateurTrouve['password'],
+                    'type' => $utilisateurTrouve['type']
                 );
                 header('Location: ../feed-project.php');
             }
