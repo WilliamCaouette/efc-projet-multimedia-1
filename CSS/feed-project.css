@@ -1,0 +1,71 @@
+/* Les googles fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://use.typekit.net/owd7oyt.css");
+* {
+    box-sizing: border-box;
+}
+
+
+/*-- Classe Basique --*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f1f5;
+}
+
+main {
+    width: 80%;
+    margin: 5% auto;
+}
+
+header {
+    height: 70px;
+    background-color: #222;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #222;
+    color: #fff;
+}
+
+
+/*-- Classe Perso --*/
+
+
+/*- Logo -*/
+
+.logo h1 {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #ff6646;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.logo h1 img {
+    flex-basis: 10%;
+}
+
+.media-fluide {
+    width: 100%;
+    height: auto;
+}
+
+.fas {
+    font-size: 1em;
+    color: #ff6646;
+    cursor: pointer;
+}
