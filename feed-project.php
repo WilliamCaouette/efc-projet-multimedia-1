@@ -1,6 +1,9 @@
- <?php 
-        include "db.php";
-    ?>
+<?php 
+    session_start();
+    if (empty($_SESSION['utilisateur'])) {
+        header('Location: index.php');
+    }
+?>
      
 <!DOCTYPE html>
 <html lang="fr">

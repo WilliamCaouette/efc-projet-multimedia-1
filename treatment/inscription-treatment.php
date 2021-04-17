@@ -1,12 +1,15 @@
 <?php 
-    print_r($_POST);
+    session_start();
+    if (!empty($_SESSION['utilisateur'])) {
+        header('Location: feed-project.php');
+    }
     $utilsateur = filter_var_array($_POST, array(
         'mail' => FILTER_SANITIZE_EMAIL,
         'password' => FILTER_SANITIZE_STRING,
-        'location' => FILTER_SANITIZE_STRING,
+        'pays' => FILTER_SANITIZE_STRING,
         'bio' => FILTER_SANITIZE_STRING,
         'type' => FILTER_SANITIZE_STRING
-    ));
+     ));
 
     
     if (!filter_var($utilsateur['mail'], FILTER_VALIDATE_EMAIL)) {
@@ -23,9 +26,9 @@
 
             $sth->bindParam(':mail', $utilsateur['mail'], PDO::PARAM_STR);
             $sth->bindParam(':password', $motPasseSecurise, PDO::PARAM_STR);
-            $sth->bindParam(':location', $_POST['pays'], PDO::PARAM_STR);
-            $sth->bindParam(':bio', $_POST['bio'], PDO::PARAM_STR);
-            $sth->bindParam(':type', $_POST['type'], PDO::PARAM_STR);
+            $sth->bindParam(':location', $utilsateur['pays'], PDO::PARAM_STR);
+            $sth->bindParam(':bio', $utilsateur['bio'], PDO::PARAM_STR);
+            $sth->bindParam(':type', $utilsateur['type'], PDO::PARAM_STR);
 
 
             if ($sth->execute()) {
