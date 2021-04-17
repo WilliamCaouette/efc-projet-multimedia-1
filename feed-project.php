@@ -40,12 +40,12 @@
                 <div>
                     <input type="radio" name="type" id="image" checked value="image"> image
                     <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
-                    <input name="url" id="url" type="text">
+                    <input name="url_image" id="url" type="text">
                 </div>
                 <div>
                     <input type="radio" name="type" id="video" value="video"> video
                     <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
-                    <input name="url" id="url" type="text">
+                    <input name="url_video" id="url" type="text">
                 </div>
             </div>
             <input type="submit" value="Publier">
