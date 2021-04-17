@@ -14,10 +14,11 @@
             <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
         </div>
         <section class="inscription-container">
+        <form action="treatment/inscription-treatment.php" method="post">
             <section class="select-account-container">
                 <div>
-                    <label for="type_membre">Type de compte</label>
-                    <Select name="type_membre" id="type_membre">
+                    <label for="type">Type de compte</label>
+                    <Select name="type" id="type_membre">
                         <option value="businesse">Affaire</option>
                         <option value="personnal">Personnel</option>
                     </Select>
@@ -26,18 +27,18 @@
             
             <section class="identity-container">
                  
-                <form action="treatment/inscription-treatment.php" method="post">
+              
                         <div>
                             <label for="mail">Identifiant</label>
-                            <input type="text" name="username" id="username">
+                            <input type="text" name="mail" id="mail">
                         </div>
                         <div>
-                            <label for="mot_de_passe">Mot de passe</label>
-                            <input type="password" name="mot_de_passe" id="mot_de_passe">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" name="password" id="mot_de_passe">
                         </div>
                         <div>
                             <label for="mot_de_passe">Confirmation du mot de passe</label>
-                            <input type="password" name="mot_de_passe" id="mot_de_passe">
+                            <input type="password" name="password" id="mot_de_passe">
                         </div>
                 
             

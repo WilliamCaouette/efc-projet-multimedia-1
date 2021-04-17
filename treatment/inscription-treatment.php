@@ -1,5 +1,5 @@
 <?php 
-
+    print_r($_POST);
     $utilsateur = filter_var_array($_POST, array(
         'mail' => FILTER_SANITIZE_EMAIL,
         'password' => FILTER_SANITIZE_STRING,
@@ -19,10 +19,13 @@
 
             $motPasseSecurise = password_hash($utilsateur['password'], PASSWORD_BCRYPT);
 
-            $sth = $dbh->prepare("INSERT INTO `utilisateur`(`mail`, `password`, `location`, `bio`, `type` ) VALUES (:mail, :password, :password, :password, :password, :password);");
+            $sth = $dbh->prepare("INSERT INTO `utilisateur`(`mail`, `password`, `location`, `bio`, `type` ) VALUES (:mail, :password, :location, :bio, :type);");
 
             $sth->bindParam(':mail', $utilsateur['mail'], PDO::PARAM_STR);
             $sth->bindParam(':password', $motPasseSecurise, PDO::PARAM_STR);
+            $sth->bindParam(':location', $_POST['pays'], PDO::PARAM_STR);
+            $sth->bindParam(':bio', $_POST['bio'], PDO::PARAM_STR);
+            $sth->bindParam(':type', $_POST['type'], PDO::PARAM_STR);
 
 
             if ($sth->execute()) {

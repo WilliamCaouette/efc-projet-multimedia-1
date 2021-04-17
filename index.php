@@ -22,9 +22,9 @@
             <div class="logo">
                 <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
             </div>
-            <form action="POST">
+            <form action="treatment/auth-treatement.php" method="post">
                 <div class="box-identification">
-                    <input type="text" name="username" id="username" placeholder="xyz@gmail.com">
+                    <input type="text" name="mail" id="mail" placeholder="xyz@gmail.com">
                 </div>
                 <div class="box-identification">
                     <input type="password" name="password" id="password" placeholder="password">
