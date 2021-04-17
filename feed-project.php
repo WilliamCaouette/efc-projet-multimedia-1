@@ -24,10 +24,33 @@
     <?php
         include "header.php";
     ?>
-
-    <header>
-        <h2>Projets</h2>
-    </header>
+    <section class="form-publication">
+        <form action="post-project-treatment" method="post">
+            <div>
+                <label for="title">Titre <span class="icone-obligatoire">*</span></label>
+                <input type="text" name="title" placeholder="titre">
+            </div>
+            <div>
+                <label for="description">description <span class="icone-obligatoire">*</span></label>
+                <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>
+            </div>
+            <!-- pour t'aider pendant le dev du btn radio https://stackoverflow.com/questions/43276485/enable-button-if-radio-button-selected-->
+            <div>
+                <label for="title">type de média <span class="icone-obligatoire">*</span></label>
+                <div>
+                    <input type="radio" name="type" id="image" checked value="image"> image
+                    <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
+                    <input name="url" id="url" type="text">
+                </div>
+                <div>
+                    <input type="radio" name="type" id="video" value="video"> video
+                    <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
+                    <input name="url" id="url" type="text">
+                </div>
+            </div>
+            <input type="submit" value="Publier">
+        </form>
+    </section>
 
     <main>
         <section id="js-feed-project">
@@ -37,7 +60,9 @@
 
     <!--Template mustache mettre dans un views--> 
     <!----> 
-       
+    <section class="bas-de-page-static">
+        <button id="js-btn-publier">Publier</button>
+    </section>
     <?php
         include "footer.php";
     ?>
