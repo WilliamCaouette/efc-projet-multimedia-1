@@ -1,7 +1,7 @@
 <?php 
     session_start();
 
-    //rediriger les utilisateurs déjà connecter
+    //rediriger les utilisateurs non connecter
     if (empty($_SESSION['utilisateur'])) {
         header('Location: ../index.php');
     }

@@ -1,15 +1,16 @@
 <?php
     session_start();
+
+    //redirige les utilisateurs connecter
     if (!empty($_SESSION['utilisateur'])) {
         header('Location: ../feed-project.php');
     }
-
 
     try {
 
         include "../db.php";
 
-
+        //créé un array a partire des éléments du post filtrer
         $utilisateur = filter_var_array($_POST, array(
             'mail' => FILTER_SANITIZE_EMAIL,
             'password' => ['filter' => FILTER_SANITIZE_STRING,
@@ -27,6 +28,7 @@
             
             $utilisateurTrouve = $sth->fetch(PDO::FETCH_ASSOC);
 
+            //vérifie si le mot de passe entrée est le même que celui de l'utilisateur trouver
             if(password_verify($utilisateur['password'], $utilisateurTrouve['password'])) {
                 
                 $_SESSION['utilisateur'] = array(

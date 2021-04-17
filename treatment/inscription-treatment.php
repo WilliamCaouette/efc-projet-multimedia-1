@@ -1,8 +1,10 @@
 <?php 
     session_start();
+    //redirige les utilisateurs connectés
     if (!empty($_SESSION['utilisateur'])) {
         header('Location: feed-project.php');
     }
+
     $utilsateur = filter_var_array($_POST, array(
         'mail' => FILTER_SANITIZE_EMAIL,
         'password' => FILTER_SANITIZE_STRING,
@@ -11,7 +13,7 @@
         'type' => FILTER_SANITIZE_STRING
      ));
 
-    
+    //vérifie si le mail entrée est valide
     if (!filter_var($utilsateur['mail'], FILTER_VALIDATE_EMAIL)) {
             echo("Le format du courriel est invalide.");
     }
@@ -20,6 +22,7 @@
         try {
             include "../db.php";
 
+            //sécurise le mot de passe entrée
             $motPasseSecurise = password_hash($utilsateur['password'], PASSWORD_BCRYPT);
 
             $sth = $dbh->prepare("INSERT INTO `utilisateur`(`mail`, `password`, `location`, `bio`, `type` ) VALUES (:mail, :password, :location, :bio, :type);");
