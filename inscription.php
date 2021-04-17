@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/inscription.css">
+    <link rel="stylesheet" href="css/inscription.css">
     <title>Inscription</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="logo">
             <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
         </div>
-        <section class="inscription-container">
+        <section class="inscription-section">
         <form action="treatment/inscription-treatment.php" method="post">
             <section class="select-account-container">
                 <div>
@@ -29,22 +29,22 @@
                  
               
                         <div>
-                            <label for="mail">Identifiant</label>
+                            <label for="mail">Identifiant <span class="orange-color">*</span></label>
                             <input type="text" name="mail" id="mail">
                         </div>
                         <div>
-                            <label for="password">Mot de passe</label>
+                            <label for="password">Mot de passe <span class="orange-color">*</span></label>
                             <input type="password" name="password" id="mot_de_passe">
                         </div>
                         <div>
-                            <label for="mot_de_passe">Confirmation du mot de passe</label>
+                            <label for="mot_de_passe">Confirmation du mot de passe <span class="orange-color">*</span></label>
                             <input type="password" name="password" id="mot_de_passe">
                         </div>
                 
             
                 
                     <div>
-                    <label for="country">Pays</label>
+                    <label for="country">Pays <span>*</span></label>
                         <select id="country" name="pays">
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -302,11 +302,45 @@
                         <textarea name="bio" placeholder="écrivez quelques mots sur vous.." cols="50" rows="8" maxlength="325" id="js-biographie" required></textarea>
                     </div>
                 </section>
-                
-                <!--créé des bouttons radios pour choisire son avatare-->
-                <input type="submit" value="s'inscrire">
+
+                <section class="container-avatar">
+            <div class="neumorphisme-box">
+                <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked>
+                <label class="for-checkbox-tools" for="tool-1">
+                    <img src="https://via.placeholder.com/300" alt="" class="media-fluide">
+                </label>
+            </div>
+
+            <div class="neumorphisme-box">
+                <input class="checkbox-tools" type="radio" name="tools" id="tool-2">
+                <label class="for-checkbox-tools" for="tool-2">
+                    <img src="https://via.placeholder.com/300" alt="" class="media-fluide">
+                </label>
+            </div>
+
+            <div class="neumorphisme-box">
+                <input class="checkbox-tools" type="radio" name="tools" id="tool-3">
+                <label class="for-checkbox-tools" for="tool-3">
+                    <img src="https://via.placeholder.com/300" alt="" class="media-fluide">
+                </label>
+            </div>
+
+            <div class="neumorphisme-box">
+                <input class="checkbox-tools" type="radio" name="tools" id="tool-4">
+                <label class="for-checkbox-tools" for="tool-4">
+                    <img src="https://via.placeholder.com/300" alt="" class="media-fluide">
+                </label>
+            </div>
+        </section>
+                <div class="container-submit">
+                    <input type="submit" value="Créer votre compte">
+                </div>
             </form>
-        </section>        
+                <div class="button">
+                    <p>retour à la page de connexion</p>
+                    <a href="index.php"><b>Connectez-vous</b></a>
+                </div>
+        </section>
     </main>
 </body>
 </html>
