@@ -1,4 +1,5 @@
 <?php
+    session_start();
     if (!empty($_SESSION['utilisateur'])) {
         header('Location: ../feed-project.php');
     }
@@ -33,7 +34,6 @@
                     'mail' => $utilisateurTrouve['mail'],
                     'password' => $utilisateurTrouve['password']
                 );
-            
                 header('Location: ../feed-project.php');
             }
             else {
