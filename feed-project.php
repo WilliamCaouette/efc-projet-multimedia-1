@@ -1,8 +1,9 @@
 <?php 
     session_start();
-    if (empty($_SESSION['utilisateur'])) {
+    
+    /*if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
-    }
+    }*/
 ?>
      
 <!DOCTYPE html>
