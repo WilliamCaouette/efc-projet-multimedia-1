@@ -12,8 +12,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Font Awesome + CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/feed-project.css">
     <!-- Mustache -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
     <!-- JS -->
@@ -21,6 +22,16 @@
     <title>Eniwan</title>
 </head>
 <body>
+    <!-- Changer la couleur du logo -->
+    <header>
+        <div class="logo">
+            <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
+        </div>
+        <div class="menu">
+        <i class="fas fa-bars"></i>
+        </div>
+        <!-- Insérer un btn burger -->
+    </header>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <?php
         include "header.php";
@@ -66,7 +77,7 @@
         <button id="js-btn-publier">Publier</button>
     </section>
     <?php
-        include "footer.php";
+        //include "footer.php";
     ?>
 </body>
 </html>
