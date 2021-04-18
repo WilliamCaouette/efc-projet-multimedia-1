@@ -28,14 +28,33 @@
             <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
         </div>
         <div class="menu">
-        <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </div>
         <!-- Insérer un btn burger -->
     </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="feed-project.php">Accueil</a>
+                </li>
+                    <span class="line"></span>
+                <li>
+                    <a href="feed-project.php">Projets</a>
+                </li>
+                    <span class="line"></span>
+                <li>
+                    <a href="feed-offer.php">Emplois</a>
+                </li>
+                    <span class="line"></span>
+                <li>
+                    <a href="">Profil</a>
+                </li>
+                    <span class="line"></span>
+            </ul>
+        </nav>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
-    <?php
-        include "header.php";
-    ?>
+    <!-- Suppression de l'include header.php -->
+    
     <section class="form-publication">
         <form action="treatment/post-project-treatment.php" method="post">
             <div>
