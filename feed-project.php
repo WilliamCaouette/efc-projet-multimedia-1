@@ -4,6 +4,16 @@
     /*if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
     }*/
+    
+
+    function addALike($idProject, $currentNbLikes){
+        include 'db.php';
+        $requete = 'UPDATE `projet` SET `likes`= :likes WHERE `id_projet` = :id_projet';
+        $sth = $dbh->prepare($requete);
+        $sth->bindParam(':likes', $currentNbLikes+=1, PDO::PARAM_INT);
+        $sth->bindParam(':id_projet', $idProject, PDO::PARAM_INT);
+        $sth->execute();
+    }
 ?>
      
 <!DOCTYPE html>
