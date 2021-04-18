@@ -20,6 +20,31 @@ main {
   margin: 5% auto;
 }
 
+.btn-disconnect {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  margin-top: 28%;
+  flex-basis: 25%;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  transition: all 500ms ease;
+}
+
+a:hover {
+  background-color: darken(65%);
+  color: #222;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -43,14 +68,19 @@ footer {
 
 /*- Logo -*/
 
-.logo h1 {
+.logo a h1 {
   flex-basis: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #ff6646;
   font-family: neue-haas-grotesk-display, sans-serif;
+  transition: all 300ms ease;
+}
+
+.logo a h1:hover {
+  color: #fff;
 }
 
 .logo h1 img {
@@ -61,6 +91,8 @@ footer {
   width: 100%;
   height: auto;
 }
+
+/*- Icones -*/
 
 .btn-menu {
   width: 100%;
@@ -76,6 +108,11 @@ footer {
   color: #ff6646;
   font-size: 2em;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.fa-bars:hover {
+  color: #fff;
 }
 
 .fa-times {
@@ -83,8 +120,13 @@ footer {
   top: 1;
   float: right;
   color: #fff;
-  font-size: 2em;
+  font-size: 2.5em;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.fa-times:hover {
+  color: #222;
 }
 
 /*- Menu -*/
@@ -120,8 +162,8 @@ li {
   display: block;
 }
 
-a {
-  font-size: 1.5em;
+.menu a {
+  font-size: 1.8em;
   display: block;
   text-decoration: none;
   margin-bottom: 6%;

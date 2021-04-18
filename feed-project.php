@@ -35,17 +35,19 @@
     <!-- Changer la couleur du logo -->
     <header>
         <div class="logo">
-            <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
+            <a href="feed-project.php">
+                <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
+            </a>
         </div>
         <div class="btn-menu">
             <i class="fas fa-bars"></i>
         </div>
     </header>
         <nav>
+            <div class="btn-cancel">
+                <i class="fas fa-times"></i>
+            </div>
             <ul class="menu">
-                <div class="btn-cancel">
-                    <i class="fas fa-times"></i>
-                </div>
                 <li>
                     <a href="feed-project.php">Accueil</a>
                 </li>
@@ -63,6 +65,9 @@
                 </li>
                     <span class="line"></span>
             </ul>
+            <div class="btn-disconnect">
+                <a href="treatment/disconnect.php">Déconnexion</a>
+            </div>
         </nav>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <!-- Suppression de l'include header.php -->
@@ -94,7 +99,9 @@
                     <input name="url_video" id="url" type="text">
                 </div>
             </div>
-            <input type="submit" value="Publier">
+            <div class="btn-publication">
+                <input type="submit" value="Publier">
+            </div>
         </form>
     </section>
 
@@ -103,7 +110,7 @@
     </section>
     </main>
     <!-- À RETIRER PLUS TARD SERT JUSTE POUR LE DEV EN ATTENDANT LE MENU-->
-    <a href="treatment/disconnect.php">disconnect</a>
+   
     <!--Template mustache mettre dans un views--> 
     <!----> 
     <section class="bas-de-page-static">
