@@ -10,7 +10,7 @@
         include 'db.php';
         $requete = 'UPDATE `projet` SET `likes`= :likes WHERE `id_projet` = :id_projet';
         $sth = $dbh->prepare($requete);
-        $sth->bindParam(':likes', $currentNbLikes+=1, PDO::PARAM_INT);
+        $sth->bindParam(':likes', $currentNbLikes+=1, PDO::PARAM_INT); //ça marche clairment pas si t'as pas rafraichit avant de like tu descend le nombre de like
         $sth->bindParam(':id_projet', $idProject, PDO::PARAM_INT);
         $sth->execute();
     }
