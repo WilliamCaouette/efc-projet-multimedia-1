@@ -16,6 +16,7 @@
     //vérifie si le mail entrée est valide
     if (!filter_var($utilsateur['mail'], FILTER_VALIDATE_EMAIL)) {
             echo("Le format du courriel est invalide.");
+            header('Location: ../inscription.php?error=mail');
     }
     else {
 
@@ -36,8 +37,10 @@
 
             if ($sth->execute()) {
                 echo("Succès lors de la création du compte.");
+                header('Location: ../index.php');
             } else {
                 echo("Erreur lors de la création du compte.");
+                header('Location: ../inscription.php?error=compte');
             }
 
 

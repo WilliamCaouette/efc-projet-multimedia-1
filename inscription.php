@@ -14,12 +14,21 @@
             <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
         </div>
         <section class="inscription-section">
+        <?php
+            if(isset($_GET['error'])){
+                ?>
+                    <section class="message-erreur">
+                        <p>Échec lors de la création de votre compte !</p>
+                    </section>
+                <?php
+            }
+        ?>
         <form action="treatment/inscription-treatment.php" method="post">
             <section class="select-account-container">
                 <div>
                     <label for="type">Type de compte</label>
                     <Select name="type" id="type_membre">
-                        <option value="businesse">Affaire</option>
+                        <option value="business">Affaire</option>
                         <option value="personnal">Personnel</option>
                     </Select>
                 </div>
