@@ -21,6 +21,7 @@ main {
 }
 
 header {
+  width: 100%;
   height: 70px;
   background-color: #222;
   display: flex;
@@ -61,15 +62,35 @@ footer {
   height: auto;
 }
 
-.fas i {
-  font-size: 1em;
+.btn-menu {
+  width: 100%;
+}
+
+.btn-cancel {
+  width: 100%;
+}
+
+.fa-bars {
+  margin: 5px 5%;
+  float: right;
   color: #ff6646;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.fa-times {
+  margin: 5px 5%;
+  top: 1;
+  float: right;
+  color: #fff;
+  font-size: 2em;
   cursor: pointer;
 }
 
 /*- Menu -*/
 
 nav {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -77,12 +98,12 @@ nav {
   height: 100vh;
   border-right: 1px solid;
   width: 25%;
-  /*transform: translateX(-100%);*/
   background-color: #ff6646;
   transition: all 500ms ease;
 }
 
 .menu {
+  z-index: 100;
   display: block;
   width: 90%;
   margin: 125px auto;
@@ -118,6 +139,10 @@ a:hover {
 
 .nav-appear {
   transform: translateX(0);
+}
+
+.show-box {
+  opacity: 1;
 }
 
 /* Faire le media querry pour le menu burger */

@@ -37,13 +37,15 @@
         <div class="logo">
             <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
         </div>
-        <div class="menu">
+        <div class="btn-menu">
             <i class="fas fa-bars"></i>
         </div>
-        <!-- Insérer un btn burger -->
     </header>
         <nav>
             <ul class="menu">
+                <div class="btn-cancel">
+                    <i class="fas fa-times"></i>
+                </div>
                 <li>
                     <a href="feed-project.php">Accueil</a>
                 </li>
@@ -65,7 +67,10 @@
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <!-- Suppression de l'include header.php -->
     
-    <section class="form-publication">
+    
+
+    <main class="main-content">
+    <section class="form-publication box">
         <form action="treatment/post-project-treatment.php" method="post">
             <div>
                 <label for="title">Titre <span class="icone-obligatoire">*</span></label>
@@ -93,10 +98,9 @@
         </form>
     </section>
 
-    <main>
-        <section id="js-feed-project">
+    <section id="js-feed-project">
 
-        </section>
+    </section>
     </main>
     <!-- À RETIRER PLUS TARD SERT JUSTE POUR LE DEV EN ATTENDANT LE MENU-->
     <a href="treatment/disconnect.php">disconnect</a>
