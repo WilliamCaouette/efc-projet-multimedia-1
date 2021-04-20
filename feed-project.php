@@ -40,7 +40,6 @@
         include "header.php"
     ?>
     
-
     <main class="main-content">
     <section class="form-publication box">
         <form action="treatment/post-project-treatment.php" method="post">
