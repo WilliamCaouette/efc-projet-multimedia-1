@@ -11,7 +11,7 @@
     
     <main>
         <div class="logo">
-            <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
+            <h1><div><img src="media/logo.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
         </div>
         <section class="inscription-section">
         <?php
@@ -35,8 +35,6 @@
             </section>
             
             <section class="identity-container">
-                 
-              
                         <div>
                             <label for="mail">Identifiant <span class="orange-color">*</span></label>
                             <input type="text" name="mail" id="mail">
