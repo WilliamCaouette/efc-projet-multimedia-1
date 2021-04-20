@@ -33,45 +33,12 @@
 </head>
 <body>
     <!-- Changer la couleur du logo -->
-    <header>
-        <div class="logo">
-            <a href="feed-project.php">
-                <h1><img src="media/logo.png" alt="logo" class="media-fluide">ENIWAN</h1>
-            </a>
-        </div>
-        <div class="btn-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-        <nav>
-            <div class="btn-cancel">
-                <i class="fas fa-times"></i>
-            </div>
-            <ul class="menu">
-                <li>
-                    <a href="feed-project.php">Accueil</a>
-                </li>
-                    <span class="line"></span>
-                <li>
-                    <a href="feed-project.php">Projets</a>
-                </li>
-                    <span class="line"></span>
-                <li>
-                    <a href="feed-offer.php">Emplois</a>
-                </li>
-                    <span class="line"></span>
-                <li>
-                    <a href="">Profil</a>
-                </li>
-                    <span class="line"></span>
-            </ul>
-            <div class="btn-disconnect">
-                <a href="treatment/disconnect.php">Déconnexion</a>
-            </div>
-        </nav>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <!-- Suppression de l'include header.php -->
     
+    <?php
+        include "header.php"
+    ?>
     
 
     <main class="main-content">

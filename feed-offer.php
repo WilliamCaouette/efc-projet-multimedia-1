@@ -9,23 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/feed-project.css">
     <!-- Mustache -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="scripts/feed-offer.js" defer></script>
+    <script src="scripts/feed-project.js" defer></script>
     <title>Eniwan</title>
 </head>
 <body>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <?php
-        include "header.php";
+        include "header.php"
     ?>
-
-    <header>
-        <h2>Offres</h2>
-    </header>
-
     <main>
         <section id="js-feed-offer">
 
