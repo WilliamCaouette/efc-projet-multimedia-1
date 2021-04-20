@@ -5,7 +5,7 @@
  * @author N.Prevel & W.Caouette
  *
  * Created at     : 2021-04-14 15:07:49
- * Last modified  : 2021-04-20 15:00:11
+ * Last modified  : 2021-04-20 15:02:38
  */
 
 /*-- Vérification --*/
@@ -79,9 +79,4 @@ btnBurger.addEventListener("click", (evt) => {
 btnCancel.addEventListener("click", (evt) => {
     navigation.classList.remove("nav-appear");
     navigation.style.display = "none";
-});
-
-btnBurger.addEventListener("click", (evt) => {
-    if (evt.target.classList.contains("btn-burger")) {}
-    navigation.classList.remove("nav-appear");
 });
