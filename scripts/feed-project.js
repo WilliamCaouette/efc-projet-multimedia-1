@@ -5,11 +5,8 @@
  * @author N.Prevel & W.Caouette
  *
  * Created at     : 2021-04-14 15:07:49
- * Last modified  : 2021-04-20 15:02:38
+ * Last modified  : 2021-04-20 16:33:54
  */
-
-/*-- Vérification --*/
-console.log("le script est lié");
 
 /*-- Récupération des contenus --*/
 const viewsContainer = document.querySelector("#js-feed-project");
@@ -80,3 +77,7 @@ btnCancel.addEventListener("click", (evt) => {
     navigation.classList.remove("nav-appear");
     navigation.style.display = "none";
 });
+
+/*-- Faire apparaître le contenu spécifique en cliquant sur le projet --*/
+
+/*-- le smooth scroll lorsqu'on clic sur l'icone --*/

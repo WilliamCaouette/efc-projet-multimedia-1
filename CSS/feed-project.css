@@ -20,16 +20,6 @@ main {
   margin: 5% auto;
 }
 
-.btn-disconnect {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 a {
   margin-top: 28%;
   flex-basis: 25%;
@@ -100,6 +90,16 @@ footer {
 
 .btn-cancel {
   width: 100%;
+}
+
+.btn-disconnect {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-bars {

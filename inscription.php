@@ -47,9 +47,7 @@
                             <label for="mot_de_passe">Confirmation du mot de passe <span class="orange-color">*</span></label>
                             <input type="password" name="password" id="mot_de_passe">
                         </div>
-                
             
-                
                     <div>
                     <label for="country">Pays <span>*</span></label>
                         <select id="country" name="pays">
