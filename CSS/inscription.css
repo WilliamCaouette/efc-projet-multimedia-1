@@ -1,13 +1,12 @@
 /* Les googles fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
+
 * {
   box-sizing: border-box;
 }
 
 /*-- Classe Basique --*/
-
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +22,6 @@ main {
 /*-- Classe Personnalisée --*/
 
 /*- Logo -*/
-
 .logo h1 {
   width: 30%;
   margin: auto;
@@ -46,7 +44,6 @@ main {
 }
 
 /*- Les différents container -*/
-
 .inscription-section form {
   width: 100%;
   display: flex;
@@ -54,14 +51,12 @@ main {
 }
 
 /* Le type de compte */
-
 .select-account-container {
   flex-basis: 100%;
   padding: 10px;
 }
 
 /* Les données du compte */
-
 .identity-container {
   flex-basis: 50%;
   padding: 10px;
@@ -124,7 +119,6 @@ input[type="submit"]:hover {
 }
 
 /* La biographie du compte */
-
 .bio-container {
   position: relative;
   float: right;
@@ -146,7 +140,6 @@ input[type="submit"]:hover {
 }
 
 /*-- Avatar box --*/
-
 .container-avatar {
   display: flex;
   flex-wrap: wrap;
