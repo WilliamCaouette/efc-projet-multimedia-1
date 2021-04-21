@@ -36,9 +36,9 @@
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <!-- Suppression de l'include header.php -->
     
-    <?php
-        include "header.php"
-    ?>
+        <?php
+            include "header.php"
+        ?>
     
     <main class="main-content">
     <section class="form-publication box">

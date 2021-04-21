@@ -19,9 +19,9 @@
 </head>
 <body>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
-    <?php
-        include "header.php"
-    ?>
+        <?php
+            include "header.php"
+        ?>
     <main>
         <section id="js-feed-offer">
 
