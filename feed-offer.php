@@ -15,7 +15,7 @@
     <!-- JS -->
     <script src="scripts/feed-offer.js" defer></script>
     <script src="scripts/feed-project.js" defer></script>
-    <title>Eniwan</title>
+    <title>Offres</title>
 </head>
 <body>
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->

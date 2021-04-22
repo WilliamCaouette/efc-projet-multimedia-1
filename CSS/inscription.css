@@ -1,193 +1,224 @@
 /* Les googles fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+
 /*-- Classe Basique --*/
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #f0f1f5;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f1f5;
 }
 
 main {
-  width: 80%;
-  margin: 5% auto;
+    width: 80%;
+    margin: 5% auto;
 }
+
 
 /*-- Classe Personnalisée --*/
 
+
 /*- Logo -*/
+
 .logo h1 {
-  width: 30%;
-  margin: auto;
-  margin-bottom: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.6em;
-  color: #ff6646;
-  font-family: neue-haas-grotesk-display, sans-serif;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6em;
+    color: #ff6646;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.logo a {
+    text-decoration: none;
 }
 
 .logo h1 div {
-  flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 .media-fluide {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
+
 
 /*- Les différents container -*/
+
 .inscription-section form {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 /* Le type de compte */
+
 .select-account-container {
-  flex-basis: 100%;
-  padding: 10px;
+    flex-basis: 100%;
+    padding: 10px;
 }
 
+
 /* Les données du compte */
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .identity-container {
-  flex-basis: 50%;
-  padding: 10px;
+    flex-basis: 50%;
+    padding: 10px;
 }
 
 .identity-container div {
-  margin-top: 2%;
+    margin-top: 2%;
 }
 
 select {
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  padding: 2% 1%;
-  margin: 2%;
-  width: 20%;
-  font-size: 1em;
-  cursor: pointer;
-  line-height: inherit;
-  border-radius: 9px;
-  color: #ff6646;
-  background: #f0f1f5;
-  box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 2% 1%;
+    margin: 2%;
+    width: 20%;
+    font-size: 1em;
+    cursor: pointer;
+    line-height: inherit;
+    border-radius: 9px;
+    color: #ff6646;
+    background: #f0f1f5;
+    box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
 }
 
 .identity-container div span {
-  color: #ff6646;
+    color: #ff6646;
 }
 
 .identity-container input[type="text"],
 input[type="password"] {
-  padding: 2% 6%;
-  border-radius: 5px;
-  border: none;
-  background: #f0f1f5;
-  box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+    padding: 2% 6%;
+    border-radius: 5px;
+    border: none;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
 .container-submit {
-  flex-basis: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="submit"] {
-  padding: 2% 5%;
-  border-radius: 80px;
-  cursor: pointer;
-  border: none;
-  color: #ff6646;
-  font-size: 1.2em;
-  background: #f0f1f5;
-  box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
+    padding: 2% 5%;
+    border-radius: 80px;
+    cursor: pointer;
+    border: none;
+    color: #ff6646;
+    font-size: 1.2em;
+    background: #f0f1f5;
+    box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
 }
 
 input[type="submit"]:hover {
-  background: #f0f1f5;
-  box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
+
 /* La biographie du compte */
+
 .bio-container {
-  position: relative;
-  float: right;
-  flex-basis: 50%;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    float: right;
+    flex-basis: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio-container div textarea {
-  resize: none;
-  vertical-align: top;
-  width: 70%;
-  justify-content: center;
-  border: none;
-  background: #f0f1f5;
-  box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+    resize: none;
+    vertical-align: top;
+    width: 70%;
+    justify-content: center;
+    border: none;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
+
 /*-- Avatar box --*/
+
 .container-avatar {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 8% auto;
-  padding: 10px;
-  border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8% auto;
+    padding: 10px;
+    border-radius: 9px;
 }
 
 .neumorphisme-box {
-  flex-basis: 25%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 9px;
+    flex-basis: 25%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 9px;
 }
 
 .media-fluide {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
+
 
 /* Neumorphisme input radio */
 
-.neumorphisme-box input[type="radio"]:checked + label img,
+.neumorphisme-box input[type="radio"]:checked+label img,
 input[type="radio"]:not(:checked) {
-  transform: scale(1.1);
-  border-radius: 2px;
-  padding: 10px;
-  background: #f0f1f5;
-  box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+    transform: scale(1.1);
+    border-radius: 2px;
+    padding: 10px;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
 .neumorphisme-box input[type="radio"] {
-  width: 100%;
-  display: none;
+    width: 100%;
+    display: none;
 }
+
 
 /* le bouton pour le retour à la page connexion */
 
 .button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
 }
 
 .button a {
-  text-decoration: none;
-  color: #ff6646;
+    text-decoration: none;
+    color: #ff6646;
+}
+
+.message-erreur {
+    font-size: 2em;
+    color: #ff6646;
 }
