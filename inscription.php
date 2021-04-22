@@ -12,12 +12,14 @@
 <body>
     <main>
         <div class="logo">
-            <h1>
-                <div>
-                    <img src="media/logo.png" alt="logo" class="media-fluide">
-                </div>
-                ENIWAN
-            </h1>
+            <a href="index.php">
+                <h1>
+                    <div>
+                        <img src="media/logo.png" alt="logo" class="media-fluide">
+                    </div>
+                    ENIWAN
+                </h1>   
+            </a>
         </div>
 
         <section class="inscription-section">
@@ -45,7 +47,7 @@
                 </div>
             
                 <section class="identity-container">
-                    <div>
+                    <div class="box">
                         <div>
                             <label for="mail">Identifiant <span class="orange-color">*</span></label>  
                         </div>
@@ -54,7 +56,7 @@
                         </div>  
                     </div>
              
-                    <div>
+                    <div class="box">
                         <div>
                             <label for="password">Mot de passe <span class="orange-color">*</span></label>   
                         </div>
