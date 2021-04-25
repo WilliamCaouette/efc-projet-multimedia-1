@@ -5,7 +5,7 @@
  * @author N.Prevel & W.Caouette
  *
  * Created at     : 2021-04-14 15:07:49
- * Last modified  : 2021-04-14 16:17:46
+ * Last modified  : 2021-04-25 20:04:40
  */
 
 /*-- Vérification --*/
@@ -23,20 +23,12 @@ function fetchView(view) {
             return response.text();
         })
         .then((html) => {
-            viewsContainer.innerHTML = html;
-        });
-}
-
-/*-- Récupération des contenus (API) --*/
-
-fetchDatas("../offer-api.php");
-
-function fetchDatas(dataPath) {
-    fetch(dataPath)
-        .then((response) => {
-            return response.json();
-        })
-        .then((html) => {
-            viewsContainer.innerHTML = html;
+            fetch(dataPath)
+                .then((response) => {
+                    return response.json();
+                })
+                .then((json) => {
+                    viewsContainer.innerHTML = Mustache.render(html, json);
+                });
         });
 }
