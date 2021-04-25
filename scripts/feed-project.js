@@ -5,7 +5,7 @@
  * @author N.Prevel & W.Caouette
  *
  * Created at     : 2021-04-14 15:07:49
- * Last modified  : 2021-04-20 16:33:54
+ * Last modified  : 2021-04-25 12:06:11
  */
 
 /*-- Récupération des contenus --*/
@@ -26,7 +26,7 @@ function fetchView(view) {
 
 /*-- Récupération des contenus (API) --*/
 
-fetchDatas("../project-api.php");
+fetchDatas("project-api.php");
 
 function fetchDatas(dataPath) {
     fetch(dataPath)

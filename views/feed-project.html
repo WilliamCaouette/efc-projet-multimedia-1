@@ -1,9 +1,9 @@
-<div class="content">
-    {{#project}}
-    <div>
-        <img src="{{image}}">
+{{#project}}
+    <div data-projet="{{id_projet}}" class="pojet">
+        <div>
+            <img src="{{image}}">
+        </div>
+        <h2>{{nom}}</h2>
+        <p>{{description}}</p>
     </div>
-    <h2>{{nom}}</h2>
-    <p>{{description}}</p>
-    {{/project}}
-</div>
+{{/project}}
