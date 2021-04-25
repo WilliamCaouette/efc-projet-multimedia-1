@@ -1,9 +1,10 @@
 <?php 
     session_start();
-    
     if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
     }
+
+    
 ?>
      
 <!DOCTYPE html>
@@ -24,11 +25,17 @@
         include "header.php";
         include "db.php";
         $request = "SELECT `bio`, `img`, `mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id";
-        $sth->$dbh->prepare($request);
+        $sth = $dbh->prepare($request);
+        $sth->bindParam(":user_id", $_GET['user_id'], PDO::PARAM_INT);
+        $sth->execute();
+        if($sth->rowCount() == 0){
+            echo("cet utilisateur n'existe pas");
+        }
+        $profil = $sth->fetch();
     ?>
     <section class="profil">
         <div>
-            <img src="<?="media/".$profil['image'];?>" alt="">
+            <img src="<?="media/".$profil['image'];?>" alt="image de profil de l'utilisateur">
         </div>
         <div>
             <h2><?=$profil['mail'];?></h2>
