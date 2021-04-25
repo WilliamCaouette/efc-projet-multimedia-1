@@ -13,6 +13,7 @@
     <!-- Mustache -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
     <!-- JS -->
+    <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/feed-offer.js" defer></script>
     <script src="scripts/feed-project.js" defer></script>
     <title>Offres</title>

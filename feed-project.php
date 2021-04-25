@@ -28,6 +28,7 @@
     <!-- Mustache -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
     <!-- JS -->
+    <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/feed-project.js" defer></script>
     <script src="scripts/post-project.js" defer></script>
     <title>Projets</title>
@@ -52,7 +53,7 @@
                 <label for="description">description <span class="icone-obligatoire">*</span></label>
                 <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>
             </div>
-            <!-- pour t'aider pendant le dev du btn radio https://stackoverflow.com/questions/43276485/enable-button-if-radio-button-selected-->
+            
             <div>
                 <label for="title">type de média <span class="icone-obligatoire">*</span></label>
                 <div>
@@ -70,21 +71,17 @@
                 <input type="submit" value="Publier">
             </div>
         </form>
-    </section>
 
+    </section>
     <section id="js-feed-project">
 
     </section>
     </main>
-    <!-- À RETIRER PLUS TARD SERT JUSTE POUR LE DEV EN ATTENDANT LE MENU-->
-   
-    <!--Template mustache mettre dans un views--> 
-    <!----> 
+       
     <section class="bas-de-page-static">
         <button id="js-btn-publier">Publier</button>
     </section>
     <?php
-        //include "footer.php";
     ?>
 </body>
 </html>
