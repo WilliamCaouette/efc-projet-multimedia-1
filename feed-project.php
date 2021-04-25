@@ -4,7 +4,6 @@
     /*if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
     }*/
-    
 
     function addALike($idProject, $currentNbLikes){
         include 'db.php';
@@ -36,12 +35,11 @@
 <body>
     <!-- Changer la couleur du logo -->
     <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
-    <!-- Suppression de l'include header.php -->
-    
+    <!-- Suppression de l'include header.php -->    
         <?php
             include "header.php"
         ?>
-    
+
     <main class="main-content">
     <section class="form-publication box">
         <form action="treatment/post-project-treatment.php" method="post">
@@ -81,7 +79,11 @@
     <section class="bas-de-page-static">
         <button id="js-btn-publier">Publier</button>
     </section>
-    <?php
-    ?>
+
+    <section>
+        <!--Insérez l'image du boutton pour le scroll-->
+        <img src="" id="js-btn-scroll">
+        <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
+    </section>
 </body>
 </html>
