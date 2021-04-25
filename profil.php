@@ -48,7 +48,7 @@
         </div>
     </section>
     <main class="main-content">
-        <section id="js-feed-project">
+        <section id="js-profil">
 
         </section>
     </main>
