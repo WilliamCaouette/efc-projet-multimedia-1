@@ -32,13 +32,20 @@
     <script src="scripts/post-project.js" defer></script>
     <title>Projets</title>
 </head>
+
 <body>
     <!-- Changer la couleur du logo -->
-    <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
     <!-- Suppression de l'include header.php -->    
-        <?php
-            include "header.php"
-        ?>
+    <?php
+        include "header.php"
+    ?>
+
+    <!-- Barre de recherche -->
+    <div>
+        <label for="barre-recherche">Recherche dans le site: </label>
+        <input type="search" id="barre-recherche" name="barre-recherche">
+        <button>Recherche</button>
+    </div>
 
     <main class="main-content">
     <section class="form-publication box">
@@ -69,8 +76,8 @@
                 <input type="submit" value="Publier">
             </div>
         </form>
-
     </section>
+
     <section id="js-feed-project">
 
     </section>
