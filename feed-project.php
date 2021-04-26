@@ -5,12 +5,12 @@
         header('Location: index.php');
     }*/
 
-    function addALike($idProject, $currentNbLikes){
+    function addALike($idProject){
         include 'db.php';
-        $requete = 'UPDATE `projet` SET `likes`= :likes WHERE `id_projet` = :id_projet';
+        $requete = 'INSERT INTO `like`(`user_id`, `project_id`) VALUES (:user_id, :project_id)';
         $sth = $dbh->prepare($requete);
-        $sth->bindParam(':likes', $currentNbLikes+=1, PDO::PARAM_INT); //ça marche clairment pas si t'as pas rafraichit avant de like tu descend le nombre de like
-        $sth->bindParam(':id_projet', $idProject, PDO::PARAM_INT);
+        $sth->bindParam(':user_id', $_SESSION['utilisateur']['utilisateur_id'], PDO::PARAM_INT);
+        $sth->bindParam(':project_id', $idProject, PDO::PARAM_INT);
         $sth->execute();
     }
 ?>
