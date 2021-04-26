@@ -26,7 +26,7 @@
                 </li>
                     <span class="line"></span>
                 <li>
-                    <a href="">Profil</a>
+                    <a href="profil.php">Profil</a>
                 </li>
                     <span class="line"></span>
             </ul>
