@@ -1,13 +1,10 @@
 /* Les googles fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
+
 * {
     box-sizing: border-box;
 }
-
-
-/*-- Classe Basique --*/
 
 body {
     margin: 0;
@@ -16,17 +13,12 @@ body {
     background-color: #f0f1f5;
 }
 
-main {
+.container {
     width: 80%;
     margin: 5% auto;
 }
 
-
-/*-- Classe Personnalisée --*/
-
-
-/*- Logo -*/
-
+/*-- Logo --*/
 .logo h1 {
     width: 30%;
     margin: auto;
@@ -47,67 +39,54 @@ main {
     flex-basis: 20%;
 }
 
-.media-fluide {
-    width: 100%;
-    height: auto;
-}
-
-
-/*- Les différents container -*/
-
-.inscription-section form {
-    width: 100%;
+/*-- Grid --*/
+.row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-
-/* Le type de compte */
-
-.select-account-container {
-    flex-basis: 100%;
-    padding: 10px;
-}
-
-
-/* Les données du compte */
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.identity-container {
+.container-infos {
     flex-basis: 50%;
-    padding: 10px;
+    padding: 50px;
 }
 
-.identity-container div {
-    margin-top: 2%;
+.col-20 {
+    float: left;
+    width: 20%;
 }
+
+.col-80 {
+    float: left;
+    width: 80%;
+}
+
+/*-- Contenu --*/
+/*-------------------Espace des informations---------------*/
 
 select {
     appearance: none;
     background-color: transparent;
     border: none;
     padding: 2% 1%;
-    margin: 2%;
     width: 20%;
     font-size: 1em;
     cursor: pointer;
-    line-height: inherit;
     border-radius: 9px;
     color: #ff6646;
     background: #f0f1f5;
     box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
 }
 
-.identity-container div span {
+.container-infos div {
+    margin-top: 2%;
+}
+
+.container-infos div span {
     color: #ff6646;
 }
 
-.identity-container input[type="text"],
-input[type="password"] {
+.container-infos input[type="text"], input[type="password"] {
     padding: 2% 6%;
     border-radius: 5px;
     border: none;
@@ -115,6 +94,66 @@ input[type="password"] {
     box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
+
+
+
+/*----------------------Espace de la biographie------------------------*/
+.container-bio {
+    position: relative;
+    float: right;
+    flex-basis: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-bio div textarea {
+    resize: none;
+    vertical-align: top;
+    width: 70%;
+    justify-content: center;
+    border: none;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+}
+
+/*--------------------Espace Avatar-------------------*/
+.container-avatar {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8% auto;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.neumorphisme-box {
+    flex-basis: 22%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.media-fluide {
+    width: 100%;
+    height: auto;
+}
+
+.neumorphisme-box input[type="radio"]:checked+label img, input[type="radio"]:not(:checked) {
+    transform: scale(1.1);
+    border-radius: 2px;
+    padding: 10px;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+}
+
+.neumorphisme-box input[type="radio"] {
+    width: 100%;
+    display: none;
+}
+
+/*------------------Espace bouton submit du formulaire----------------------------*/
 .container-submit {
     flex-basis: 100%;
     display: flex;
@@ -138,72 +177,7 @@ input[type="submit"]:hover {
     box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
-
-/* La biographie du compte */
-
-.bio-container {
-    position: relative;
-    float: right;
-    flex-basis: 50%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bio-container div textarea {
-    resize: none;
-    vertical-align: top;
-    width: 70%;
-    justify-content: center;
-    border: none;
-    background: #f0f1f5;
-    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
-}
-
-
-/*-- Avatar box --*/
-
-.container-avatar {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 8% auto;
-    padding: 10px;
-    border-radius: 9px;
-}
-
-.neumorphisme-box {
-    flex-basis: 25%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 9px;
-}
-
-.media-fluide {
-    width: 100%;
-    height: auto;
-}
-
-
-/* Neumorphisme input radio */
-
-.neumorphisme-box input[type="radio"]:checked+label img,
-input[type="radio"]:not(:checked) {
-    transform: scale(1.1);
-    border-radius: 2px;
-    padding: 10px;
-    background: #f0f1f5;
-    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
-}
-
-.neumorphisme-box input[type="radio"] {
-    width: 100%;
-    display: none;
-}
-
-
-/* le bouton pour le retour à la page connexion */
-
+/*-----------------Espace retour à la page de connection ------------------------*/
 .button {
     display: flex;
     flex-direction: column;
