@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-04-27 13:58:45
+ * Last modified  : 2021-04-27 15:07:47
  */
  const containerShowProject = document.querySelector("#js-container-show-project");
  let projects;
@@ -74,12 +74,14 @@
              <img class="media-fluide" src="${currentProject.url_media}" alt="image représentant le projet">
          </div>
          <div class="half-item">
-             <section class="creator-infos">
-                 <div class="img-profil">
-                     <img class="media-fluide" src='media/ ${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
-                 </div>
-                 <p class="user-name">${currentProjectCreator.mail}, ${currentProjectCreator.location}</p>
-             </section>
+             <a href="profil.php?user_id=${currentProject.id_user}">
+                <section class="creator-infos">
+                    <div class="img-profil">
+                        <img class="media-fluide" src='media/ ${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
+                    </div>
+                    <p class="user-name">${currentProjectCreator.mail}, ${currentProjectCreator.location}</p>
+                </section>
+             </a>
              <section class="post-content">
                  <h2 class="projet-titre">${currentProject.nom}</h2>
                  <p>${currentProject.description}</p>
@@ -100,23 +102,25 @@
              </div>
          </div>
          <div class="half-item">
-             <section class="creator-infos">
-                 <div class="img-profil">
-                     <img class="media-fluide" src="media/<?=getSpecificUser(${currentProject.id_user})->img?>" alt="image de profil de l'utilisateur">
-                 </div>
-                 <p class="user-name"><?=getSpecificUser(${currentProject.id_user})->mail?>, <?=getSpecificUser(${currentProject.id_user})->location?></p>
-             </section>
-             <section class="post-content">
-                 <h2 class="projet-titre">${currentProject.nom}</h2>
-                 <p>${currentProject.description}</p>
-             </section>
-             <section class="like-section">
-                 <div class="img-like">
-                     <img class="media-fluide" onclick='addALike(${currentProject.id_projet})' src="media/heart.png" alt="image de profil de l'utilisateur">
-                 </div>
-                 <p>${currentProject.likes}</p>
-             </section>
-         </div>`;
+            <a href="profil.php?user_id=${currentProject.id_user}">
+                <section class="creator-infos">
+                    <div class="img-profil">
+                        <img class="media-fluide" src='media/ ${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
+                    </div>
+                    <p class="user-name">${currentProjectCreator.mail}, ${currentProjectCreator.location}</p>
+                </section>
+            </a>
+            <section class="post-content">
+                <h2 class="projet-titre">${currentProject.nom}</h2>
+                <p>${currentProject.description}</p>
+            </section>
+            <section class="like-section">
+                <div class="img-like">
+                    <img class="media-fluide" onclick='addALike(${currentProject.id_projet})' src="media/heart.png" alt="coeur">
+                </div>
+                <p>${currentProject.likes}</p>
+            </section>
+        </div>`;
      }
      
  }
