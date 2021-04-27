@@ -21,7 +21,6 @@
         
         $projects = array();
         $projects['project'] = array();
-
         while($project = $sth->fetch(PDO::FETCH_ASSOC)){
             array_push($projects['project'], $project);
         }

@@ -4,15 +4,16 @@
     /*if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
     }*/
-
-    function addALike($idProject){
+    function getSpecificUser($id_user){
         include 'db.php';
-        $requete = 'INSERT INTO `like`(`user_id`, `project_id`) VALUES (:user_id, :project_id)';
+        $requete = 'SELECT `utilisateur_id`,`img`,`mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id';
         $sth = $dbh->prepare($requete);
-        $sth->bindParam(':user_id', $_SESSION['utilisateur']['utilisateur_id'], PDO::PARAM_INT);
-        $sth->bindParam(':project_id', $idProject, PDO::PARAM_INT);
+        $sth->bindParam(':user_id', $id_user, PDO::PARAM_INT);
         $sth->execute();
+        echo($sth->fetch());
+
     }
+   
 ?>
      
 <!DOCTYPE html>
@@ -81,6 +82,9 @@
     <section id="js-feed-project">
 
     </section>
+    <section id="js-container-show-project">
+
+    </section>
     </main>
        
     <section class="bas-de-page-static">
@@ -92,5 +96,7 @@
         <img src="" id="js-btn-scroll">
         <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
     </section>
+
+    <input type="hidden" name="" id="js-user-id" value="<?=$_SESSION['utilisateur']['utilisateur_id']?>">
 </body>
 </html>

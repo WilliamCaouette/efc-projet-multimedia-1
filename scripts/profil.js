@@ -5,11 +5,11 @@
  * @author N.Prevel
  *
  * Created at     : 2021-04-25 19:48:30
- * Last modified  : 2021-04-26 14:58:19
+ * Last modified  : 2021-04-27 09:17:18
  */
 
 /*-- Récupération des contenus --*/
-const viewsContainer = document.querySelector("js-feed-project");
+const viewsContainer = document.querySelector("#js-feed-project");
 const value = document.querySelector("#js-value").value;
 let projectsContainers;
 /*-- Fonction pour l'affichage + Récupération des contenus en fonction de l'id dans l'URL --*/
