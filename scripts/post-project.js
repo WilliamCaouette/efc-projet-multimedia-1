@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-04-27 15:07:47
+ * Last modified  : 2021-04-27 15:20:42
  */
  const containerShowProject = document.querySelector("#js-container-show-project");
  let projects;
@@ -53,7 +53,9 @@
         }
     });
  }
- 
+ /**
+  * @summary récupère les informations sur le créateur du projet selectionner
+  */
  function getProjectCreator(){
     fetch("user-api.php?id_user=" + currentProject.id_user)
     .then(response=>{return response.json()})
@@ -125,6 +127,10 @@
      
  }
 
+ /**
+  * @summary ajoute un like dans la table de données via une api ce qui à pour effet d'activé le "trigger" qui ajoute un like sur le projet
+  * @param {int} projectId l'identifiant unique du projet liker
+  */
  function addALike(projectId){
     like = {
         project_id : projectId,

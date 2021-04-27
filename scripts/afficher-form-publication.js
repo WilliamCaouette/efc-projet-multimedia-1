@@ -5,7 +5,7 @@
  * @author N.Prevel & William Caouette
  * 
  * Created at     : 2021-04-25 19:36:04
- * Last modified  : 2021-04-27 09:48:09
+ * Last modified  : 2021-04-27 15:25:42
  */
 
 
@@ -13,7 +13,7 @@ const btnPublication = document.querySelector("#js-btn-publier");
 const formPublication = document.querySelector("#form-publication box");
 
 /**
- *si le formulais est display block il le met en none et vis versa
+ * @summary si le formulais est display block il le met en none et vis versa
  */
 btnPublication.addEventListener("click", (e)=>{
     

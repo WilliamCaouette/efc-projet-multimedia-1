@@ -1,11 +1,11 @@
 /**
  * Script de l'Api Mustache du Feed des projets
- *
+ *  CE SCRIPT FONCTIONNE DE FAÇON COMPLÉMENTAIRE AVEC post-project.js
  * @summary
  * @author N.Prevel & W.Caouette
  *
  * Created at     : 2021-04-14 15:07:49
- * Last modified  : 2021-04-26 14:38:57
+ * Last modified  : 2021-04-27 15:25:30
  */
 
 /*-- Récupération des contenus --*/
@@ -14,8 +14,11 @@ let projectsContainers;
 /*-- Fonction pour l'affichage --*/
 fetchView("views/feed-project.html");
 
-/*-- Récupération des contenus (API) --*/
 
+/**
+ * @summary récupère la vue et les données via l'api approprié puis insère le html dans le conteneur
+ * @param {string} view le path vers le html partiel que nous souhaitons utiliser comme pattern 
+ */
 function fetchView(view) {
     fetch(view)
         .then((response) => {

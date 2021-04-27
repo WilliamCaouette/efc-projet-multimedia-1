@@ -5,18 +5,17 @@
  * @author N.Prevel
  *
  * Created at     : 2021-04-25 19:48:30
- * Last modified  : 2021-04-27 09:17:18
+ * Last modified  : 2021-04-27 15:26:46
  */
 
-/*-- Récupération des contenus --*/
 const viewsContainer = document.querySelector("#js-feed-project");
 const value = document.querySelector("#js-value").value;
 let projectsContainers;
-/*-- Fonction pour l'affichage + Récupération des contenus en fonction de l'id dans l'URL --*/
 
 
-/*-- Récupération des contenus (API) --*/
-
+/**
+ * @summary récupère la vue et les données via l'api approprié puis insère le html dans le conteneur 
+ */
 function fetchView() {
     fetch("views/feed-project.html")
         .then((reponse) => {
