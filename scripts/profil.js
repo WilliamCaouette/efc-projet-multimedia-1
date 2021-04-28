@@ -2,10 +2,10 @@
  * Script de l'Api Mustache de la page profil
  *
  * @summary short description for the file
- * @author N.Prevel
+ * @author N.Prevel & William Caouette
  *
  * Created at     : 2021-04-25 19:48:30
- * Last modified  : 2021-04-27 15:26:46
+ * Last modified  : 2021-04-27 20:26:13
  */
 
 const viewsContainer = document.querySelector("#js-feed-project");
