@@ -210,5 +210,35 @@ a:hover {
     border-radius: 3px;
 }
 
+/*-------------Espace du formulaire (pop-up) de publication de projet------------------*/
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 15px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 15px;
+}
+
+.media-choix {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    background: #f0f1f5;
+    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+}
+
+
 
 /* Faire le media querry pour le menu burger */

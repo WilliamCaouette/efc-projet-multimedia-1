@@ -53,27 +53,42 @@
         <section class="form-publication box">
             <form action="treatment/post-project-treatment.php" method="post">
                 <div>
-                    <label for="title">Titre <span class="icone-obligatoire">*</span></label>
-                    <input type="text" name="title" placeholder="titre">
+                    <div class="col-25">
+                        <label for="title">Titre <span class="icone-obligatoire">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="title" placeholder="titre">
+                    </div>     
                 </div>
 
                 <div>
-                    <label for="description">description <span class="icone-obligatoire">*</span></label>
-                    <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>
+                    <div class="col-25">
+                        <label for="description">description <span class="icone-obligatoire">*</span></label>    
+                    </div>
+                    <div class="col-75">
+                        <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>    
+                    </div>       
                 </div>
                 
                 <div>
-                    <label for="title">type de média <span class="icone-obligatoire">*</span></label>
-                    <div>
-                        <input type="radio" name="type" id="image" checked value="image"> image
-                        <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
-                        <input name="url_image" id="url" type="text">
+                    <div class="col-25">
+                        <label for="title">type de média <span class="icone-obligatoire">*</span></label>    
                     </div>
-                    <div>
-                        <input type="radio" name="type" id="video" value="video"> video
-                        <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
-                        <input name="url_video" id="url" type="text">
+                    <div class="col-75">
+                        <div class="media-choix">
+                            <div>
+                                <input type="radio" name="type" id="image" checked value="image"> image
+                                <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
+                                <input name="url_image" id="url" type="text">
+                            </div>
+                            <div>
+                                <input type="radio" name="type" id="video" value="video"> video
+                                <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
+                                <input name="url_video" id="url" type="text">
+                            </div>
+                        </div>                    
                     </div>
+                    
                 </div>
 
                 <div class="btn-publication">
