@@ -332,7 +332,7 @@
             </section>
 
             <section class="container-bio">
-                <div>
+                <div class="bio-box">
                     <div class="col-20">
                         <label for="bio">Biographie</label>    
                     </div>
@@ -343,6 +343,7 @@
             </section>
                 
             <section class="container-avatar">
+                <h2>Choisir votre avatar</h2>
                 <div class="neumorphisme-box">
                     <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked>
                     <label class="for-checkbox-tools" for="tool-1">
