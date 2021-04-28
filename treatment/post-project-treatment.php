@@ -35,7 +35,6 @@
         }
         
         if($sth->execute()){
-            echo("Le post à été créé");
             header('Location: '.$pageFinal);
         }else{
             echo("erreur lors de la création du post");

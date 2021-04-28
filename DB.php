@@ -1,8 +1,8 @@
 <?php
 
-    $dsn = 'mysql:dbname=efc_eq2;host=localhost';
-    $utilisateur = 'root';
-    $motPasse = '';
+    $dsn = 'mysql:dbname=tim_eq2-2021;host=localhost';
+    $utilisateur = 'tim_eq2-2021';
+    $motPasse = '6J5n9quduA';
 
     try {
 

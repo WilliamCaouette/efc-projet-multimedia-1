@@ -24,7 +24,6 @@
         $sth->bindParam(':mail', $utilisateur['mail'], PDO::PARAM_STR);
 
         if ($sth->execute()) {
-            echo("Succès lors de la récupération du compte.");
             
             $utilisateurTrouve = $sth->fetch(PDO::FETCH_ASSOC);
 

@@ -36,10 +36,8 @@
 
 
             if ($sth->execute()) {
-                echo("Succès lors de la création du compte.");
                 header('Location: ../index.php');
             } else {
-                echo("Erreur lors de la création du compte.");
                 header('Location: ../inscription.php?error=compte');
             }
 
