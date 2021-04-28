@@ -5,7 +5,7 @@
  * @author N.Prevel & William Caouette
  *
  * Created at     : 2021-04-25 19:48:30
- * Last modified  : 2021-04-27 20:26:13
+ * Last modified  : 2021-04-28 07:57:28
  */
 
 const viewsContainer = document.querySelector("#js-feed-project");
