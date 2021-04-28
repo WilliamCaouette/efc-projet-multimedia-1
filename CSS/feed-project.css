@@ -1,14 +1,13 @@
 /* Les googles fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
+
 * {
     box-sizing: border-box;
 }
 
 
 /*-- Classe Basique --*/
-
 body {
     margin: 0;
     padding: 0;
@@ -55,12 +54,7 @@ footer {
     color: #fff;
 }
 
-
-/*-- Classe Perso --*/
-
-
 /*- Logo -*/
-
 .logo a h1 {
     width: 50%;
     display: flex;
@@ -201,6 +195,19 @@ a:hover {
 
 .show-box {
     opacity: 1;
+}
+
+/*--------------Espace du feed projet------------------*/
+.feed-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projet {
+    flex-basis: 24%;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 

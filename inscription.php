@@ -332,7 +332,7 @@
             </section>
 
             <section class="container-bio">
-                <div class="bio-box">
+                <div>
                     <div class="col-20">
                         <label for="bio">Biographie</label>    
                     </div>

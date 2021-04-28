@@ -12,8 +12,7 @@
         $sth->execute();
         echo($sth->fetch());
 
-    }
-   
+    }   
 ?>
      
 <!DOCTYPE html>
@@ -49,42 +48,44 @@
     </div>
 
     <main class="main-content">
-    <section class="form-publication box">
-        <form action="treatment/post-project-treatment.php" method="post">
-            <div>
-                <label for="title">Titre <span class="icone-obligatoire">*</span></label>
-                <input type="text" name="title" placeholder="titre">
-            </div>
-            <div>
-                <label for="description">description <span class="icone-obligatoire">*</span></label>
-                <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>
-            </div>
-            
-            <div>
-                <label for="title">type de média <span class="icone-obligatoire">*</span></label>
+        
+        <!-- Formulaire de publication de projets -->
+        <section class="form-publication box">
+            <form action="treatment/post-project-treatment.php" method="post">
                 <div>
-                    <input type="radio" name="type" id="image" checked value="image"> image
-                    <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
-                    <input name="url_image" id="url" type="text">
+                    <label for="title">Titre <span class="icone-obligatoire">*</span></label>
+                    <input type="text" name="title" placeholder="titre">
                 </div>
+
                 <div>
-                    <input type="radio" name="type" id="video" value="video"> video
-                    <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
-                    <input name="url_video" id="url" type="text">
+                    <label for="description">description <span class="icone-obligatoire">*</span></label>
+                    <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>
                 </div>
-            </div>
-            <div class="btn-publication">
-                <input type="submit" value="Publier">
-            </div>
-        </form>
-    </section>
+                
+                <div>
+                    <label for="title">type de média <span class="icone-obligatoire">*</span></label>
+                    <div>
+                        <input type="radio" name="type" id="image" checked value="image"> image
+                        <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
+                        <input name="url_image" id="url" type="text">
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="video" value="video"> video
+                        <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
+                        <input name="url_video" id="url" type="text">
+                    </div>
+                </div>
 
-    <section id="js-feed-project">
+                <div class="btn-publication">
+                    <input type="submit" value="Publier">
+                </div>
+            </form>
+        </section>
 
-    </section>
-    <section id="js-container-show-project">
+        <!-- Feed de projets -->
+        <section id="js-feed-project" class="feed-project"></section>
 
-    </section>
+        <section id="js-container-show-project"></section>
     </main>
        
     <section class="bas-de-page-static">
