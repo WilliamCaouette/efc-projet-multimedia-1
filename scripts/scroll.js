@@ -4,17 +4,17 @@
  * @author N.Prevel
  *
  * Created at     : 2021-04-25 19:47:46
- * Last modified  : 2021-04-29 09:00:41
+ * Last modified  : 2021-04-29 09:06:25
  */
 
-const nav = document.querySelector("nav");
 const btnScroll = document.querySelector("#js-btn-scroll");
 
-btnScroll.addEventListener("click", function () {
+btnScroll.addEventListener("click", scroll);
+
+function scroll() {
   console.log("scroll");
-  let offsetPosition = elementPosition + window.pageYOffset;
   window.scrollTo({
-    top: offsetPosition,
+    top: 0,
     behavior: "smooth",
   });
-});
+}
