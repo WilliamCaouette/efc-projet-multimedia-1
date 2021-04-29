@@ -240,7 +240,21 @@ input[type="search"] {
 .projet {
   flex-basis: 24%;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.projet-infos {
+  opacity: 0;
+  background-color: #ff6646;
+  color: #fff;
+  padding: 8px;
+  transition: opacity 250ms ease;
+}
+
+.projet-infos:hover {
+  opacity: 0.8;
 }
 
 .bas-de-page-static {

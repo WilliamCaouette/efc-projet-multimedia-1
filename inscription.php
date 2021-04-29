@@ -49,7 +49,7 @@
                 
                 <div>
                     <div class="col-20">
-                        <label for="mail">Identifiant <span class="orange-color">*</span></label>  
+                        <label for="mail">Courriel <span class="orange-color">*</span></label>  
                     </div>
                     <div class="col-80">
                         <input type="text" name="mail" id="mail">
@@ -334,7 +334,7 @@
             <section class="container-bio">
                 <div>
                     <div class="col-20">
-                        <label for="bio">Biographie</label>    
+                        <label for="bio">Biographie </label>    
                     </div>
                     <div class="col-80">
                         <textarea name="bio" placeholder="écrivez quelques mots sur vous.." cols="50" rows="8" maxlength="325" id="js-biographie" required></textarea>    
