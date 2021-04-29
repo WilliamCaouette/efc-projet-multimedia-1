@@ -1,9 +1,9 @@
 <?php 
     session_start();
     
-    if (empty($_SESSION['utilisateur'])) {
+    /*if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
-    }
+    }*/
     function getSpecificUser($id_user){
         include 'db.php';
         $requete = 'SELECT `utilisateur_id`,`img`,`mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id';
@@ -31,6 +31,7 @@
     <script src="scripts/feed-project.js" defer></script>
     <script src="scripts/scroll.js" defer></script>
     <script src="scripts/post-project.js" defer></script>
+    <script src="scripts/afficher-form-publication.js" defer></script>
     <title>Projets</title>
 </head>
 
