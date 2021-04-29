@@ -117,8 +117,10 @@ footer {
 }
 
 .fa-chevron-up {
+  position: fixed;
   margin: 5px 95%;
-  bottom: 1;
+  bottom: 0;
+  right: 0;
   color: #ff6646;
   font-size: 2em;
   cursor: pointer;
