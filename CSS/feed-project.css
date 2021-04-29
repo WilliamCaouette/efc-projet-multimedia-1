@@ -57,10 +57,10 @@ footer {
 /*- Logo -*/
 
 .logo a h1 {
+  margin-left: 3%;
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 1em;
   color: #ffffff;
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -244,6 +244,50 @@ input[type="search"] {
 }
 
 /*-------------Espace du formulaire (pop-up) de publication de projet------------------*/
+.container-container {
+  background-color: rgba(34, 34, 34, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.form-publication {
+  background-color: #f0f1f5;
+  padding: 3%;
+  border-radius: 10px; 
+}
+
+.logo-formulaire {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 8%;
+  
+}
+
+.logo-formulaire a h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #ff6646;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  transition: all 300ms ease;
+  
+}
+
+.logo-formulaire a h1 div {
+  display: flex;
+  align-items: center;
+  flex-basis: 10%;
+  margin-right: 3px;
+}
 
 .col-25 {
   float: left;
@@ -274,5 +318,6 @@ textarea {
   background: #f0f1f5;
   box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
+
 
 /* Faire le media querry pour le menu burger */
