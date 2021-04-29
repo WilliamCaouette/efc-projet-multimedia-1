@@ -239,6 +239,9 @@ input[type="search"] {
 
 .projet {
   flex-basis: 24%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
   border-radius: 10px;
   width: 200px;
