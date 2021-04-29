@@ -3,20 +3,19 @@
  *
  * @summary short description for the file
  * @author N.Prevel & William Caouette
- * 
+ *
  * Created at     : 2021-04-25 19:36:04
- * Last modified  : 2021-04-27 15:25:42
+ * Last modified  : 2021-04-29 09:58:57
  */
-
 
 const btnPublication = document.querySelector("#js-btn-publier");
 const formPublication = document.querySelector("#form-publication box");
 
 /**
- * @summary si le formulais est display block il le met en none et vis versa
+ * @summary si le formulaire est en display "block", il le met en "none" et vice-versa
  */
-btnPublication.addEventListener("click", (e)=>{
-    
-    formPublication.style.display == "block" ? formPublication.style.display = "none" : formPublication.style.display = "block";
-
+btnPublication.addEventListener("click", (e) => {
+  formPublication.style.display == "block"
+    ? (formPublication.style.display = "none")
+    : (formPublication.style.display = "block");
 });
