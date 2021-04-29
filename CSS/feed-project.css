@@ -121,8 +121,8 @@ footer {
 .fa-chevron-up {
   position: fixed;
   margin: 5px 95%;
-  bottom: 0;
-  right: 0;
+  bottom: 3vh;
+  left: 0;
   color: #ff6646;
   font-size: 2em;
   cursor: pointer;
@@ -243,9 +243,34 @@ input[type="search"] {
   border-radius: 3px;
 }
 
+.bas-de-page-static {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 10vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn-publier-projet {
+  border-radius: 80px;
+  padding: 20px 60px;
+  width: 20%;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  color: #ff6646;
+  background: #f0f1f5;
+  box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
+}
+
+
 /*-------------Espace du formulaire (pop-up) de publication de projet------------------*/
 .container-container {
   background-color: rgba(34, 34, 34, 0.3);
+  z-index: 100;
   position: fixed;
   left: 0;
   top: 0;

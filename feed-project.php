@@ -51,7 +51,7 @@
 
     <main class="main-content">
         
-        <!-- Formulaire de publication de projets -->
+        <!-- Formulaire de publication de projets (à changer classe)-->
         <section class="container-container">
             <section class="form-publication box">
 
@@ -116,7 +116,7 @@
     </main>
        
     <section class="bas-de-page-static">
-        <button id="js-btn-publier">Publier</button>
+        <button id="js-btn-publier" class="btn-publier-projet">Publier</button>
         <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
     </section>
 
