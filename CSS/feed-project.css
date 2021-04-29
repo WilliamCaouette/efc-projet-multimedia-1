@@ -1,244 +1,258 @@
 /* Les googles fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 /*-- Classe Basique --*/
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    background-color: #f0f1f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f1f5;
 }
 
 main {
-    width: 80%;
-    margin: 5% auto;
+  width: 80%;
+  margin: 5% auto;
 }
 
 a {
-    margin-top: 28%;
-    flex-basis: 25%;
-    font-size: 2em;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    transition: all 500ms ease;
+  margin-top: 28%;
+  flex-basis: 25%;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  transition: all 500ms ease;
 }
 
 a:hover {
-    background-color: darken(65%);
-    color: #222;
+  background-color: darken(65%);
+  color: #222;
 }
 
 header {
-    width: 100%;
-    height: 70px;
-    background-color: #222;
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
+  width: 100%;
+  height: 70px;
+  background-color: #222;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 footer {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    background-color: #222;
-    color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  background-color: #222;
+  color: #fff;
 }
 
 /*- Logo -*/
+
 .logo a h1 {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8em;
-    color: #ff6646;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    transition: all 300ms ease;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  color: #ff6646;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  transition: all 300ms ease;
 }
 
 .logo a h1:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .logo a h1 div {
-    flex-basis: 25%;
+  flex-basis: 25%;
 }
 
 .media-fluide {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 
 /*- Icones -*/
 
 .btn-menu {
-    width: 100%;
+  width: 100%;
 }
 
 .btn-cancel {
-    width: 100%;
+  width: 100%;
 }
 
 .btn-disconnect {
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /*- Awesome icons -*/
 
 .fa-bars {
-    margin: 5px 5%;
-    top: 1;
-    float: right;
-    color: #ff6646;
-    font-size: 2em;
-    cursor: pointer;
-    transition: all 300ms ease;
+  margin: 5px 5%;
+  top: 1;
+  float: right;
+  color: #ff6646;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
 .fa-bars:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .fa-chevron-up {
-    margin: 5px 95%;
-    bottom: 1;
-    color: #ff6646;
-    font-size: 2em;
-    cursor: pointer;
+  margin: 5px 95%;
+  bottom: 1;
+  color: #ff6646;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .fa-times {
-    margin: 5px 5%;
-    float: right;
-    color: #fff;
-    font-size: 2.5em;
-    cursor: pointer;
-    transition: all 300ms ease;
+  margin: 5px 5%;
+  float: right;
+  color: #fff;
+  font-size: 2.5em;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
 .fa-times:hover {
-    color: #222;
+  color: #222;
 }
 
+/* Sticky */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  height: 75px;
+}
+
+/*.sticky a {
+    color: #000;
+}
+*/
 
 /*- Menu -*/
 
 nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 25%;
-    height: 100vh;
-    border-right: 1px solid;
-    width: 25%;
-    background-color: #ff6646;
-    transition: all 500ms ease;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100vh;
+  border-right: 1px solid;
+  width: 25%;
+  background-color: #ff6646;
+  transition: all 500ms ease;
 }
 
 .menu {
-    z-index: 100;
-    display: block;
-    width: 90%;
-    margin: 125px auto;
-    list-style: none;
+  z-index: 100;
+  display: block;
+  width: 90%;
+  margin: 125px auto;
+  list-style: none;
 }
 
 li {
-    display: block;
+  display: block;
 }
 
 .line {
-    margin-top: 0;
-    border-bottom: 2px solid #fff;
-    display: block;
+  margin-top: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
 }
 
 .menu a {
-    font-size: 1.8em;
-    display: block;
-    text-decoration: none;
-    margin-bottom: 6%;
-    margin-top: 4%;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    transition: all 300ms ease;
+  font-size: 1.8em;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 6%;
+  margin-top: 4%;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  transition: all 300ms ease;
 }
 
 a:hover {
-    background-color: darken(65%);
-    color: #222;
+  background-color: darken(65%);
+  color: #222;
 }
 
 .nav-appear {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .show-box {
-    opacity: 1;
+  opacity: 1;
 }
 
 /*--------------Espace du feed projet------------------*/
+
 .feed-project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .projet {
-    flex-basis: 24%;
-    cursor: pointer;
-    border-radius: 3px;
+  flex-basis: 24%;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 /*-------------Espace du formulaire (pop-up) de publication de projet------------------*/
+
 .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 15px;
+  float: left;
+  width: 25%;
+  margin-top: 15px;
 }
 
 .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 15px;
+  float: left;
+  width: 75%;
+  margin-top: 15px;
 }
 
 .media-choix {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
-    resize: vertical;
-    background: #f0f1f5;
-    box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+  background: #f0f1f5;
+  box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
-
-
 
 /* Faire le media querry pour le menu burger */

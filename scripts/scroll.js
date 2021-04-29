@@ -1,20 +1,19 @@
 /**
- * Scroll
+ * Scroll à partir d'un bouton dans la page
  *
- * @summary short description for the file
  * @author N.Prevel
  *
  * Created at     : 2021-04-25 19:47:46
- * Last modified  : 2021-04-26 00:12:20
+ * Last modified  : 2021-04-29 08:47:36
  */
 
-// Le nav se situe dans le header.php
-
-const navigation = document.querySelector("nav");
+const nav = document.querySelector("nav");
 const btnScroll = document.querySelector("#js-btn-scroll");
 
-// remplacer windows par le bouton, pour que le clic force la page à remonter
-
-btnScroll.addEventListener("scroll", function() {
-    navigation.classList.toggle("sticky", window.scrollY > 0);
+btnScroll.addEventListener("scroll", function () {
+  nav.classList.toggle("sticky", window.scrollY > 0);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
