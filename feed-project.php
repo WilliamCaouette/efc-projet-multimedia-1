@@ -109,8 +109,7 @@
     </section>
 
     <section>
-        <!--Insérez l'image du boutton pour le scroll-->
-        <img src="" id="js-btn-scroll">
+        <!--Remplacer par une image perso-->
         <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
     </section>
 
