@@ -4,7 +4,7 @@
 <header>
     <div class="logo">
         <a href="feed-project.php">
-            <h1><div><img src="media/logo.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
+            <h1><div><img src="media/logo.small.blanc.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
         </a>
     </div>
     <div class="btn-menu">

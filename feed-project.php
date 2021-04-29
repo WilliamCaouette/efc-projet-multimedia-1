@@ -43,10 +43,10 @@
     ?>
 
     <!-- Barre de recherche -->
-    <div>
-        <label for="barre-recherche">Recherche dans le site: </label>
-        <input type="search" id="barre-recherche" name="barre-recherche">
-        <button>Recherche</button>
+    <div class="recherche-container">
+        <label for="barre-recherche"></label>
+        <input type="search" id="barre-recherche" name="barre-recherche" placeholder="Recherche dans le site ex: mots clefs, titres de projets, utilisateurs ...">
+        <button class="btn-recherche">Rechercher</button>
     </div>
 
     <main class="main-content">

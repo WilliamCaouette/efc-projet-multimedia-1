@@ -38,10 +38,10 @@ a:hover {
 header {
   width: 100%;
   height: 70px;
-  background-color: #222;
+  background-color: #ff6646;
   display: flex;
-  justify-content: left;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -61,8 +61,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8em;
-  color: #ff6646;
+  font-size: 1em;
+  color: #ffffff;
   font-family: neue-haas-grotesk-display, sans-serif;
   transition: all 300ms ease;
 }
@@ -72,7 +72,10 @@ footer {
 }
 
 .logo a h1 div {
-  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  flex-basis: 17%;
+  margin-right: 3px;
 }
 
 .media-fluide {
@@ -103,10 +106,9 @@ footer {
 /*- Awesome icons -*/
 
 .fa-bars {
-  margin: 5px 5%;
-  top: 1;
+  margin-right: 2%;
   float: right;
-  color: #ff6646;
+  color: #ffffff;
   font-size: 2em;
   cursor: pointer;
   transition: all 300ms ease;
@@ -195,6 +197,36 @@ a:hover {
 
 .show-box {
   opacity: 1;
+}
+
+/*--------------Espace barre de recherche--------------*/
+.recherche-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+input[type="search"] {
+  width: 45%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+  background: #f0f1f5;
+  box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
+}
+
+.btn-recherche {
+  margin-left: 1%;
+  border-radius: 80px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: #ff6646;
+  background: #f0f1f5;
+  box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
 }
 
 /*--------------Espace du feed projet------------------*/
