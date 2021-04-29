@@ -137,20 +137,6 @@ footer {
   color: #222;
 }
 
-/* Sticky */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  height: 75px;
-}
-
-/*.sticky a {
-    color: #000;
-}
-*/
-
 /*- Menu -*/
 
 nav {
