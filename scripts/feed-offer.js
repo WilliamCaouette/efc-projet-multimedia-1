@@ -5,11 +5,9 @@
  * @author N.Prevel & W.Caouette
  *
  * Created at     : 2021-04-14 15:07:49
- * Last modified  : 2021-04-25 20:09:50
+ * Last modified  : 2021-04-29 08:27:47
  */
 
-/*-- Vérification --*/
-console.log("le script est lié");
 
 /*-- Récupération des contenus --*/
 const viewsContainer = document.querySelector("#js-feed-offer");
