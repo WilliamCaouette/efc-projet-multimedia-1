@@ -5,11 +5,11 @@
  * @author N.Prevel & William Caouette
  *
  * Created at     : 2021-04-25 19:36:04
- * Last modified  : 2021-04-29 16:50:02
+ * Last modified  : 2021-04-29 16:55:20
  */
 
 const btnPublication = document.querySelector("#js-btn-publier");
-const formPublication = document.querySelector(".form-publication");
+const formPublication = document.querySelector(".container-container");
 
 /**
  * @summary si le formulaire est en display "block", il le met en "none" et vice-versa
