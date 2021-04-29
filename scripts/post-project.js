@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-04-27 15:20:42
+ * Last modified  : 2021-04-29 18:09:35
  */
  const containerShowProject = document.querySelector("#js-container-show-project");
  let projects;
@@ -32,7 +32,6 @@
   */
  function showProject(e){
      getCurrentProject(e.target.dataset.projet);
-     getProjectCreator()
      createProjectContent();
      containerShowProject.innerHTML = projectContent;
      containerShowProject.style.display = "block";
@@ -48,6 +47,7 @@
         if(projet.id_projet == idProjet){
             console.log(projet)
             currentProject = projet;
+            getProjectCreator()
         }else{
             return;
         }
