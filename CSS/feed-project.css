@@ -361,5 +361,20 @@ textarea {
   box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
 
+/*-------------Espace du post détails------------------*/
+.show-project-container {
+  width: 50%;
+  height: 30%;
+  background-color:#f0f1f5;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.half-item {
+  flex-basis: 48%;
+}
+
 
 /* Faire le media querry pour le menu burger */

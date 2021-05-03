@@ -108,11 +108,12 @@
             </section>   
         </section>
         
-
         <!-- Feed de projets -->
         <section id="js-feed-project" class="feed-project"></section>
 
-        <section id="js-container-show-project"></section>
+        <div class="container-container">
+            <section id="js-container-show-project" class="show-project-container"></section>        
+        </div>       
     </main>
        
     <section class="bas-de-page-static">
