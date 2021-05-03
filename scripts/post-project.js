@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-04-29 18:09:35
+ * Last modified  : 2021-04-29 20:49:11
  */
  const containerShowProject = document.querySelector("#js-container-show-project");
  let projects;
@@ -92,7 +92,7 @@
                  <div class="img-like">
                      <img class="media-fluide" onclick='addALike(${currentProject.id_projet})' src="media/heart.png" alt="coeur">
                  </div>
-                 <p>${currentProject.likes}</p>
+                 <p>${currentProject.likes} likes</p>
              </section>
          </div>`;
      }
@@ -120,7 +120,7 @@
                 <div class="img-like">
                     <img class="media-fluide" onclick='addALike(${currentProject.id_projet})' src="media/heart.png" alt="coeur">
                 </div>
-                <p>${currentProject.likes}</p>
+                <p>${currentProject.likes} likes</p>
             </section>
         </div>`;
      }
