@@ -17,23 +17,23 @@
     </div>
     <ul class="menu">
         <li>
-            <a href="feed-project.php">Accueil</a>
+            <a href="feed-project.php" class="btn-liens">Accueil</a>
         </li>
             <span class="line"></span>
         <li>
-            <a href="feed-project.php">Projets</a>
+            <a href="feed-project.php" class="btn-liens">Projets</a>
         </li>
             <span class="line"></span>
         <li>
-            <a href="feed-offer.php">Emplois</a>
+            <a href="feed-offer.php" class="btn-liens">Emplois</a>
         </li>
             <span class="line"></span>
         <li>
-            <a href="profil.php?user_id=<?=$id_user?>">Profil</a>
+            <a href="profil.php?user_id=<?=$id_user?>" class="btn-liens">Profil</a>
         </li>
             <span class="line"></span>
     </ul>
     <div class="btn-disconnect">
-        <a href="treatment/disconnect.php">Déconnexion</a>
+        <a href="treatment/disconnect.php" class="btn-liens">Déconnexion</a>
     </div>
 </nav>
