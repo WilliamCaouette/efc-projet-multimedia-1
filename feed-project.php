@@ -111,8 +111,8 @@
         <!-- Feed de projets -->
         <section id="js-feed-project" class="feed-project"></section>
 
-        <div class="container-container">
-            <section id="js-container-show-project" class="show-project-container"></section>        
+        <div id="js-container-show-project" class="container-container">
+            <section class="show-project-container"></section>        
         </div>       
     </main>
        
