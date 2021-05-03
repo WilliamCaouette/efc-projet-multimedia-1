@@ -5,8 +5,9 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-03 18:32:18
+ * Last modified  : 2021-05-03 19:30:37
  */
+const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
  let projects;
  let projectContent;
@@ -33,8 +34,8 @@
  function showProject(e){
      getCurrentProject(e.target.dataset.projet);
      createProjectContent();
-     containerShowProject.innerHTML = projectContent;
-     containerShowProject.style.display = "block";
+     contentContainer.innerHTML = projectContent;
+     containerShowProject.style.display = "flex";
  }
  
  

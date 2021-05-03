@@ -112,7 +112,7 @@
         <section id="js-feed-project" class="feed-project"></section>
 
         <div id="js-container-show-project" class="container-container">
-            <section class="show-project-container"></section>        
+            <section id="js-show-project-content-container" class="show-project-container"></section>        
         </div>       
     </main>
        
