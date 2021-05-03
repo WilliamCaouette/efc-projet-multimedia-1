@@ -36,7 +36,7 @@
     ?>
     <section class="profil">
         <div>
-            <img src="<?="media/".$profil['image'];?>" alt="image de profil de l'utilisateur">
+            <img src="<?="media/".$profil['img'];?>" alt="image de profil de l'utilisateur">
         </div>
         <div>
             <h2><?=$profil['mail'];?></h2>

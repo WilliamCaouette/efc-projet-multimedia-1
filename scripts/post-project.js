@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-04-29 20:49:11
+ * Last modified  : 2021-05-03 18:32:18
  */
  const containerShowProject = document.querySelector("#js-container-show-project");
  let projects;
@@ -79,7 +79,7 @@
              <a href="profil.php?user_id=${currentProject.id_user}">
                 <section class="creator-infos">
                     <div class="img-profil">
-                        <img class="media-fluide" src='media/ ${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
+                        <img class="media-fluide" src='media/${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
                     </div>
                     <p class="user-name">${currentProjectCreator.mail}, ${currentProjectCreator.location}</p>
                 </section>
@@ -107,7 +107,7 @@
             <a href="profil.php?user_id=${currentProject.id_user}">
                 <section class="creator-infos">
                     <div class="img-profil">
-                        <img class="media-fluide" src='media/ ${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
+                        <img class="media-fluide" src='media/${currentProjectCreator.img}' alt="image de profil de l'utilisateur">
                     </div>
                     <p class="user-name">${currentProjectCreator.mail}, ${currentProjectCreator.location}</p>
                 </section>

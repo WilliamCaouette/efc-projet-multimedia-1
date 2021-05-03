@@ -89,7 +89,7 @@
                                 <div class="choix-image">
                                     <input type="radio" name="type" id="image" checked value="image"> image
                                     <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
-                                    <input name="url_image" id="url" type="text">
+                                    <input name="url_image" id="url" type="file">
                                 </div>
                                 <div class="choix-video">
                                     <input type="radio" name="type" id="video" value="video"> video
