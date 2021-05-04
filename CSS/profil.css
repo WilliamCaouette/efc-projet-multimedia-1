@@ -1,0 +1,19 @@
+.profil {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-30 {
+    flex-basis: 30%;
+}
+
+.col-70 {
+    flex-basis: 70%;
+}
+
+.infos-profil {
+    border-bottom: 2px #ff6646 solid;
+    color: #ff6646;
+}
