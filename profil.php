@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="CSS/feed-project.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
     <script src="scripts/profil.js" defer></script>
+    <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/post-project.js" defer></script>
+    <script src="scripts/afficher-form-publication.js" defer></script>
     <title>Eniwan</title>
 </head>
 <body>
@@ -53,9 +55,69 @@
     </section>
 
     <main class="main-content">
-        <section id="js-feed-project" class="feed-project"></section>
-    </main>
+    <section class="container-container">
+            <section class="form-publication box">
 
+                <div class="logo-formulaire">
+                    <a href="feed-project.php">
+                        <h1><div><img src="media/logo.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
+                    </a>
+                </div>
+
+                <form action="treatment/post-project-treatment.php" enctype="multipart/form-data" method="post">
+                    <div>
+                        <div class="col-25">
+                            <label for="title">Titre du projet <span class="icone-obligatoire">*</span></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="title" placeholder="titre">
+                        </div>     
+                    </div>
+
+                    <div>
+                        <div class="col-25">
+                            <label for="description">Description <span class="icone-obligatoire">*</span></label>    
+                        </div>
+                        <div class="col-75">
+                            <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>    
+                        </div>       
+                    </div>
+                    
+                    <div>
+                        <div class="col-25">
+                            <label for="title">Type de média <span class="icone-obligatoire">*</span></label>    
+                        </div>
+                        <div class="col-75">
+                            <div class="media-choix">
+                                <div class="choix-image">
+                                    <input type="radio" name="type" id="image" checked value="image"> image
+                                    <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
+                                    <input name="url_image" id="url" type="file">
+                                </div>
+                                <div class="choix-video">
+                                    <input type="radio" name="type" id="video" value="video"> video
+                                    <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
+                                    <input name="url_video" id="url" type="text">
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="btn-publication">
+                        <input type="submit" value="Publier">
+                    </div>
+                </form>
+            </section>   
+        </section>
+        <section id="js-feed-project" class="feed-project"></section>
+        <div id="js-container-show-project" class="container-container">
+            <section id="js-show-project-content-container" class="show-project-container"></section>        
+        </div> 
+    </main>
+    <section class="bas-de-page-static">
+        <button id="js-btn-publier" class="btn-publier-projet"><b>Publier</b></button>
+        <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
+    </section>
     <input type="hidden" name="" value="<?=$_GET['user_id'];?>" id="js-value">
+    <input type="hidden" name="" id="js-user-id" value="<?=$_SESSION['utilisateur']['utilisateur_id']?>">
 </body>
 </html>
