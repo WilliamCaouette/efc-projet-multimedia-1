@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-03 19:30:37
+ * Last modified  : 2021-05-03 20:08:41
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -91,7 +91,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
              </section>
              <section class="like-section">
                  <div class="img-like">
-                     <img class="media-fluide" onclick='addALike(${currentProject.id_projet})' src="media/heart.png" alt="coeur">
+                    <i class="far fa-heart" onclick='addALike(${currentProject.id_projet})'></i>
                  </div>
                  <p>${currentProject.likes} likes</p>
              </section>
@@ -119,7 +119,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
             </section>
             <section class="like-section">
                 <div class="img-like">
-                    <img class="media-fluide" onclick='addALike(${currentProject.id_projet})' src="media/heart.png" alt="coeur">
+                    <i class="far fa-heart" onclick='addALike(${currentProject.id_projet})'></i>
                 </div>
                 <p>${currentProject.likes} likes</p>
             </section>
