@@ -117,7 +117,7 @@
     </main>
        
     <section class="bas-de-page-static">
-        <button id="js-btn-publier" class="btn-publier-projet">Publier</button>
+        <button id="js-btn-publier" class="btn-publier-projet"><b>Publier</b></button>
         <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
     </section>
 
