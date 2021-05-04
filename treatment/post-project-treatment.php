@@ -14,7 +14,7 @@
         $fichierCible = $dossierCible . basename($_FILES['url_image']['name']);
         $file = $_FILES['url_image'];
     
-        $typesAutorises = array('jpg', 'jpeg', 'png', 'svg');
+        $typesAutorises = array('jpg', 'jpeg', 'png', 'PNG', 'svg');
         $extention = pathinfo($fichierCible, PATHINFO_EXTENSION);
     
         if (!in_array($extention, $typesAutorises)) {
