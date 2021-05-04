@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-03 20:08:41
+ * Last modified  : 2021-05-04 09:57:17
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -33,9 +33,6 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
   */
  function showProject(e){
      getCurrentProject(e.target.dataset.projet);
-     createProjectContent();
-     contentContainer.innerHTML = projectContent;
-     containerShowProject.style.display = "flex";
  }
  
  
@@ -62,6 +59,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
     .then(response=>{return response.json()})
     .then(json =>{
         currentProjectCreator = json.user[0];
+        createProjectContent();
     })
  }
  
@@ -125,8 +123,13 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
             </section>
         </div>`;
      }
-     
+     addContentToContainer();
  }
+
+function addContentToContainer(){
+    contentContainer.innerHTML = projectContent;
+     containerShowProject.style.display = "flex";
+}
 
  /**
   * @summary ajoute un like dans la table de données via une api ce qui à pour effet d'activé le "trigger" qui ajoute un like sur le projet
