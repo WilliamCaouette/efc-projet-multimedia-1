@@ -362,6 +362,12 @@ textarea {
   justify-content: space-between;
   align-items: center;
   color: #ff6646;
+  overflow-y: hidden;
+}
+
+.show-project-container div a {
+  color: #ff6646;
+  text-decoration: none;
 }
 
 .half-item {
@@ -371,6 +377,7 @@ textarea {
 .creator-infos {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .img-profil {
@@ -405,6 +412,7 @@ textarea {
 .fa-heart {
   color: #ff6646;
   font-size: 2em;
+  cursor: pointer;
 }
 
 
