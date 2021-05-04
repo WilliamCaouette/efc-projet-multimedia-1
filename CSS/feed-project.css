@@ -355,12 +355,13 @@ textarea {
 .show-project-container {
   width: 70%;
   height: 60%;
-  padding: 4%;
+  padding: 2%;
   background-color:#f0f1f5;
   border-radius: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #ff6646;
 }
 
 .half-item {
@@ -369,7 +370,7 @@ textarea {
 
 .creator-infos {
   display: flex;
-  width: 50%;
+  justify-content: space-between;
 }
 
 .img-profil {
@@ -390,9 +391,18 @@ textarea {
   justify-content: space-between;
 }
 
+.like-section p {
+  flex-basis: 77%;
+}
+
 .img-like {
   flex-basis: 20%;
 }
+
+.fa-heart {
+  color: #ff6646;
+}
+
 
 
 /* Faire le media querry pour le menu burger */
