@@ -269,6 +269,7 @@ input[type="search"] {
   bottom: 0;
   left: 0;
   width: 100%;
+  background-color: #f0f1f5;
 }
 
 .btn-publier-projet {
