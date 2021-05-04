@@ -380,5 +380,19 @@ textarea {
   flex-basis: 60%;
 }
 
+.post-content {
+  width: 100%;
+}
+
+.like-section {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-like {
+  flex-basis: 20%;
+}
+
 
 /* Faire le media querry pour le menu burger */
