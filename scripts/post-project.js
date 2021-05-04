@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-04 09:57:17
+ * Last modified  : 2021-05-04 11:21:46
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -72,7 +72,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
      if(currentProject.type_media === "image"){
          projectContent = `
          <div class="half-item">
-             <img class="media-fluide" src="${currentProject.url_media}" alt="image représentant le projet">
+             <img class="media-fluide" src="images-post/${currentProject.url_media}" alt="image représentant le projet">
          </div>
          <div class="half-item">
              <a href="profil.php?user_id=${currentProject.id_user}">

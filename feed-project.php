@@ -61,7 +61,7 @@
                     </a>
                 </div>
 
-                <form action="treatment/post-project-treatment.php" method="post">
+                <form action="treatment/post-project-treatment.php" enctype="multipart/form-data" method="post">
                     <div>
                         <div class="col-25">
                             <label for="title">Titre du projet <span class="icone-obligatoire">*</span></label>
