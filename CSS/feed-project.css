@@ -237,6 +237,7 @@ input[type="search"] {
   border-radius: 10px;
   width: 200px;
   height: 200px;
+  margin-bottom: 2%;
 }
 
 .projet-infos {
@@ -252,6 +253,11 @@ input[type="search"] {
 
 .projet-infos:hover {
   opacity: 0.8;
+}
+
+.projet-infos p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bas-de-page-static {
