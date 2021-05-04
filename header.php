@@ -3,7 +3,7 @@
 ?>
 <header>
     <div class="logo">
-        <a href="feed-project.php">
+        <a href="feed-project.php" class="btn-liens">
             <h1><div><img src="media/logo.small.blanc.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
         </a>
     </div>

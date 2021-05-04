@@ -378,7 +378,7 @@ textarea {
 }
 
 .user-name {
-  flex-basis: 60%;
+  flex-basis: 77%;
 }
 
 .post-content {
@@ -392,15 +392,19 @@ textarea {
 }
 
 .like-section p {
-  flex-basis: 77%;
+  flex-basis: 91%;
 }
 
 .img-like {
-  flex-basis: 20%;
+  flex-basis: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-heart {
   color: #ff6646;
+  font-size: 2em;
 }
 
 
