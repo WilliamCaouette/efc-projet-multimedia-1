@@ -346,73 +346,73 @@
                 <h2>Choisir votre avatar</h2>
                 <div class="neumorphisme-box">
                     <input type="radio" name="image" value="men-1.png" id="img-1" checked>
-                    <label class="for-checkbox-tools" for="tool-1">
+                    <label class="for-checkbox-tools" for="img-1">
                         <img src="media/men-1.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input type="radio" name="image" value="men-2.png" id="img-2">
-                    <label class="for-checkbox-tools" for="tool-2">
+                    <label class="for-checkbox-tools" for="img-2">
                         <img src="media/men-2.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="men-3.png" id="img-3">
-                    <label class="for-checkbox-tools" for="tool-3">
+                    <label class="for-checkbox-tools" for="img-3">
                         <img src="media/men-3.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input type="radio" name="image" value="men-4.png" id="img-4">
-                    <label class="for-checkbox-tools" for="tool-4">
+                    <label class="for-checkbox-tools" for="img-4">
                         <img src="media/men-4.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="men-5.png" id="img-5">
-                    <label class="for-checkbox-tools" for="tool-5">
+                    <label class="for-checkbox-tools" for="img-5">
                         <img src="media/men-5.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="men-6.png" id="img-6">
-                    <label class="for-checkbox-tools" for="tool-6">
+                    <label class="for-checkbox-tools" for="img-6">
                         <img src="media/men-6.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="women-1.png" id="img-7">
-                    <label class="for-checkbox-tools" for="tool-7">
+                    <label class="for-checkbox-tools" for="img-7">
                         <img src="media/women-1.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input type="radio" name="image" value="women-2.png" id="img-8">
-                    <label class="for-checkbox-tools" for="tool-8">
+                    <label class="for-checkbox-tools" for="img-8">
                         <img src="media/women-2.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="women-3.png" id="img-9">
-                    <label class="for-checkbox-tools" for="tool-9">
+                    <label class="for-checkbox-tools" for="img-9">
                         <img src="media/women-3.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="women-4.png" id="img-10">
-                    <label class="for-checkbox-tools" for="tool-10">
+                    <label class="for-checkbox-tools" for="img-10">
                         <img src="media/women-4.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input  type="radio" name="image" value="women-5.png" id="img-11">
-                    <label class="for-checkbox-tools" for="tool-11">
+                    <label class="for-checkbox-tools" for="img-11">
                         <img src="media/women-5.png" alt="" class="media-fluide">
                     </label>
                 </div>
                 <div class="neumorphisme-box">
                     <input type="radio" name="image" value="women-6.png" id="img-12">
-                    <label class="for-checkbox-tools" for="tool-12">
+                    <label class="for-checkbox-tools" for="img-12">
                         <img src="media/women-6.png" alt="" class="media-fluide">
                     </label>
                 </div>
