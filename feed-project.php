@@ -37,8 +37,15 @@
 
 <body>
     <!-- Changer la couleur du logo -->
-    <!-- Suppression de l'include header.php -->    
+    <!-- Suppression de l'include header.php -->  
+      
     <?php
+        if($_GET['error'] === "type_file"){
+            echo("le type de fichier n'est pas pris en charge par ce site");
+        }elseif($_GET['error'] === "file_size"){
+            echo("le fichier que vous avez téléverser est trop volumineux veuillez s'il vous plaît réessayer avec un fichier de moins de 5Mo");
+        }
+
         include "header.php"
     ?>
 
