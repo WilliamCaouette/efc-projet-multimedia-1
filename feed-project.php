@@ -1,9 +1,9 @@
 <?php 
     session_start();
     
-    /*if (empty($_SESSION['utilisateur'])) {
+    if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
-    }*/
+    }
     function getSpecificUser($id_user){
         include 'db.php';
         $requete = 'SELECT `utilisateur_id`,`img`,`mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id';
@@ -131,3 +131,4 @@
     <input type="hidden" name="" id="js-user-id" value="<?=$_SESSION['utilisateur']['utilisateur_id']?>">
 </body>
 </html>
+<!-- récupéré la session dans l'API plus tot que avec un  hidden-->

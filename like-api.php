@@ -16,8 +16,7 @@
             http_response_code(201);
 
             echo(json_encode(
-                array("message"=>"Le citoyen a bel et bien été créé à l'id : " . $dbh->lastInsertId())
-            
+                array("message"=>"Le post à bien été liker : " . $dbh->lastInsertId())
             ));
 
         }else{
