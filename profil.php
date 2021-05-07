@@ -1,8 +1,8 @@
 <?php 
     session_start();
-    /*if (empty($_SESSION['utilisateur'])) {
+    if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
-    }*/
+    }
 
     
 ?>
@@ -21,6 +21,8 @@
     <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/post-project.js" defer></script>
     <script src="scripts/afficher-form-publication.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Eniwan</title>
 </head>
 <body>

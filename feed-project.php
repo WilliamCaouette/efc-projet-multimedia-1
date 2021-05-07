@@ -32,6 +32,8 @@
     <script src="scripts/scroll.js" defer></script>
     <script src="scripts/post-project.js" defer></script>
     <script src="scripts/afficher-form-publication.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Projets</title>
 </head>
 
