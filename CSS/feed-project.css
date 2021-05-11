@@ -221,7 +221,6 @@ input[type="search"] {
 }
 
 /*--------------Espace du feed projet------------------*/
-
 .feed-project {
   display: flex;
   flex-wrap: wrap;
@@ -279,9 +278,8 @@ input[type="search"] {
   font-size: 1.2em;
   cursor: pointer;
   border: none;
-  color: #ff6646;
-  background: #f0f1f5;
-  box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
+  color: #f0f1f5;
+  background: #ff6646;
 }
 
 
@@ -426,6 +424,11 @@ textarea {
   cursor: pointer;
 }
 
+.btn-x {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #ff6646;
+}
 
 
-/* Faire le media querry pour le menu burger */
