@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-04 11:21:46
+ * Last modified  : 2021-05-11 15:28:13
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -71,6 +71,9 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
      //crée le contenu html en fonction du type de média que contient le projet
      if(currentProject.type_media === "image"){
          projectContent = `
+         <div class="btn-x">
+            <i class="fas fa-times"></i>
+         </div>
          <div class="half-item">
              <img class="media-fluide" src="images-post/${currentProject.url_media}" alt="image représentant le projet">
          </div>
@@ -97,6 +100,9 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
      }
      else{
          projectContent = `
+         <div class="btn-x">
+            <i class="fas fa-times"></i>
+         </div>
          <div class="half-item">
              <div class="youtube-responsive">
                  <iframe width="818" height="460" src="https://www.youtube.com/embed/${currentProject.url_media}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
