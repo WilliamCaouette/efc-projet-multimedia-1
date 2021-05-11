@@ -132,10 +132,6 @@ footer {
   transition: all 300ms ease;
 }
 
-.fa-times:hover {
-  color: #222;
-}
-
 /*- Menu -*/
 
 nav {
@@ -429,6 +425,9 @@ textarea {
   position: absolute;
   top: 2%;
   right: 2%;
+}
+
+.btn-x .fa-times {
   color: #ff6646;
 }
 
