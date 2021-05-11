@@ -302,6 +302,7 @@ input[type="search"] {
   background-color: #f0f1f5;
   padding: 3%;
   border-radius: 10px; 
+  position: relative;
 }
 
 .logo-formulaire {
