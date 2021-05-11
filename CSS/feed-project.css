@@ -369,6 +369,7 @@ textarea {
   align-items: center;
   color: #ff6646;
   overflow-y: hidden;
+  position: relative;
 }
 
 .show-project-container div a {
