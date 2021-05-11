@@ -54,11 +54,15 @@
         <!-- Formulaire de publication de projets (à changer classe)-->
         <section class="container-container">
             <section class="form-publication box">
-
+                
                 <div class="logo-formulaire">
-                    <a href="feed-project.php">
+                    <a href="feed-project.php" class="btn-liens">
                         <h1><div><img src="media/logo.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
                     </a>
+                </div>
+
+                <div class="btn-x">
+                    <i class="fas fa-times"></i>
                 </div>
 
                 <form action="treatment/post-project-treatment.php" enctype="multipart/form-data" method="post">
