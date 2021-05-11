@@ -1,9 +1,9 @@
 <?php 
     session_start();
     
-    /*if (empty($_SESSION['utilisateur'])) {
+    if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
-    }*/
+    }
     function getSpecificUser($id_user){
         include 'db.php';
         $requete = 'SELECT `utilisateur_id`,`img`,`mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id';
@@ -32,13 +32,22 @@
     <script src="scripts/scroll.js" defer></script>
     <script src="scripts/post-project.js" defer></script>
     <script src="scripts/afficher-form-publication.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Projets</title>
 </head>
 
 <body>
     <!-- Changer la couleur du logo -->
-    <!-- Suppression de l'include header.php -->    
+    <!-- Suppression de l'include header.php -->  
+      
     <?php
+        if($_GET['error'] === "type_file"){
+            echo("le type de fichier n'est pas pris en charge par ce site");
+        }elseif($_GET['error'] === "file_size"){
+            echo("le fichier que vous avez téléverser est trop volumineux veuillez s'il vous plaît réessayer avec un fichier de moins de 5Mo");
+        }
+
         include "header.php"
     ?>
 
@@ -128,3 +137,4 @@
     <input type="hidden" name="" id="js-user-id" value="<?=$_SESSION['utilisateur']['utilisateur_id']?>">
 </body>
 </html>
+<!-- récupéré la session dans l'API plus tot que avec un  hidden-->
