@@ -432,4 +432,11 @@ textarea {
   color: #ff6646;
 }
 
+.btn-publication input[type="submit"] {
+  background-color: #ff6646;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 
