@@ -50,9 +50,7 @@
         <button class="btn-recherche">Rechercher</button>
     </div>
 
-    <div class="pub-container">
-        <img src="media/microsoft-project-banner.svg"xlink:href="data:image/png; base64" alt="image pub microsoft" class="pub-aircanada">
-    </div>
+    <div class="pub-container"></div>
 
     <main class="main-content">
         
