@@ -13,8 +13,11 @@
 .col-25 {
     flex-basis: 24%;
     border: 3px solid #ff6646;
+    height: 10vh;
+    background-position: center;
     border-radius: 25px;
     overflow: hidden;
+    background-size: cover;
 }
 
 .col-75 {
