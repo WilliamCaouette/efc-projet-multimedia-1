@@ -16,24 +16,24 @@
     <!-- JS -->
     <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/feed-offer.js" defer></script>
+    <script src="scripts/post-offer.js" defer></script>
+
     <title>Offres</title>
 </head>
 <body>
-    <!-- intégrer ici l'entête/ la barre de recherche/ etc. -->
         <?php
             include "header.php"
         ?>
     <main>
+        <div id="js-container-show-offer" class="container-container">
+            <section id="js-show-offer-content-container" class="show-project-container"></section>        
+        </div> 
         <section id="js-feed-offer">
-
+        
         </section>
     </main>
 
-    <!--Template mustache mettre dans un views--> 
-    <!----> 
+    
        
-    <?php
-        include "footer.php";
-    ?>
 </body>
 </html>
