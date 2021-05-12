@@ -187,11 +187,17 @@ li {
 }
 
 /*--------------Espace barre de recherche--------------*/
-.recherche-container, .pub-container {
+.recherche-container {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 5%;
+}
+
+.pub-container {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
 }
 
 input[type="search"] {
