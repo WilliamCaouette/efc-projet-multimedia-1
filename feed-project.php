@@ -4,15 +4,7 @@
     if (empty($_SESSION['utilisateur'])) {
         header('Location: index.php');
     }
-    function getSpecificUser($id_user){
-        include 'db.php';
-        $requete = 'SELECT `utilisateur_id`,`img`,`mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id';
-        $sth = $dbh->prepare($requete);
-        $sth->bindParam(':user_id', $id_user, PDO::PARAM_INT);
-        $sth->execute();
-        echo($sth->fetch());
-
-    }   
+       
 ?>
      
 <!DOCTYPE html>
