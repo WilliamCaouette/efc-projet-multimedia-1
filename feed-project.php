@@ -51,7 +51,7 @@
     </div>
 
     <div class="pub-container">
-        <a href="https://www.aircanada.com/ca/en/aco/home.html#/">
+        <a href="https://www.aircanada.com/ca/en/aco/home.html#/" target="_blank">
             <img src="media/AirCanada-banner.jpg" alt="pub aircanada" class="fluide">
         </a>  
     </div>
