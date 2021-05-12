@@ -30,7 +30,7 @@
     <?php
         include "header.php";
         include "db.php";
-        $request = "SELECT `bio`, `img`, `mail`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id";
+        $request = "SELECT `bio`, `img`, `mail`, `type`, `location` FROM `utilisateur` WHERE `utilisateur_id` = :user_id";
         $sth = $dbh->prepare($request);
         $sth->bindParam(":user_id", $_GET['user_id'], PDO::PARAM_INT);
         $sth->execute();

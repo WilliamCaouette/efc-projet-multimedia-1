@@ -17,13 +17,75 @@
     <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/feed-offer.js" defer></script>
     <script src="scripts/post-offer.js" defer></script>
+    <script src="scripts/afficher-form-publication.js" defer></script>
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Offres</title>
 </head>
 <body>
-        <?php
-            include "header.php"
-        ?>
+    <?php
+        include "header.php"
+    ?>
+    <section class="container-container">
+        <section class="form-publication box">
+            
+            <div class="logo-formulaire">
+                <a href="feed-project.php" class="btn-liens">
+                    <h1><div><img src="media/logo.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
+                </a>
+            </div>
+
+            <div id="js-btn-close-form" class="btn-x">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <form action="treatment/post-project-treatment.php" enctype="multipart/form-data" method="post">
+                <div>
+                    <div class="col-25">
+                        <label for="title">Titre du projet <span class="icone-obligatoire">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="title" placeholder="titre">
+                    </div>     
+                </div>
+
+                <div>
+                    <div class="col-25">
+                        <label for="description">Description <span class="icone-obligatoire">*</span></label>    
+                    </div>
+                    <div class="col-75">
+                        <textarea name="description" id="description" placeholder="description" cols="30" rows="10"></textarea>    
+                    </div>       
+                </div>
+                
+                <div>
+                    <div class="col-25">
+                        <label for="title">Type de média <span class="icone-obligatoire">*</span></label>    
+                    </div>
+                    <div class="col-75">
+                        <div class="media-choix">
+                            <div class="choix-image">
+                                <input type="radio" name="type" id="image" checked value="image"> image
+                                <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
+                                <input name="url_image" id="url" type="file">
+                            </div>
+                            <div class="choix-video">
+                                <input type="radio" name="type" id="video" value="video"> video
+                                <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
+                                <input name="url_video" id="url" type="text">
+                            </div>
+                        </div>                    
+                    </div>
+                    
+                </div>
+
+                <div class="btn-publication">
+                    <input type="submit" value="Publier">
+                </div>
+            </form>
+        </section>   
+    </section>
     <main>
         <div id="js-container-show-offer" class="container-container">
             <section id="js-show-offer-content-container" class="show-project-container"></section>        
@@ -32,7 +94,10 @@
         
         </section>
     </main>
-
+    <section class="bas-de-page-static">
+        <button id="js-btn-publier" class="btn-publier-projet"><b>Publier</b></button>
+        <i class="fas fa-chevron-up" id="js-btn-scroll"></i>
+    </section>
     
        
 </body>
