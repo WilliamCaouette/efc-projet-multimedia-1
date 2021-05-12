@@ -50,7 +50,9 @@
         <button class="btn-recherche">Rechercher</button>
     </div>
 
-    <div class="pub-container"></div>
+    <div class="pub-container">
+        <img src="media/AirCanada-banner.jpg" alt="pub aircanada">
+    </div>
 
     <main class="main-content">
         
