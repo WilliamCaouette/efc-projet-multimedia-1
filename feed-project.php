@@ -51,7 +51,7 @@
     </div>
 
     <div class="pub-container">
-        <img src="media/microsoft-project-banner.svg" alt="image pub microsoft" class="pub-aircanada">
+        <img src="media/microsoft-project-banner.svg"xlink:href="data:image/png; base64" alt="image pub microsoft" class="pub-aircanada">
     </div>
 
     <main class="main-content">
