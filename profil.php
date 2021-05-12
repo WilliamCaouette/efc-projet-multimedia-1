@@ -65,7 +65,9 @@
                         <h1><div><img src="media/logo.png" alt="logo" class="media-fluide"></div>ENIWAN</h1>
                     </a>
                 </div>
-
+                <div id="js-btn-close-form" class="btn-x">
+                    <i class="fas fa-times"></i>
+                </div>
                 <form action="treatment/post-project-treatment.php" enctype="multipart/form-data" method="post">
                     <div>
                         <div class="col-25">

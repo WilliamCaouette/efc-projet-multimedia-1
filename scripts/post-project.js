@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-11 15:28:13
+ * Last modified  : 2021-05-12 10:16:24
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -71,7 +71,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
      //crée le contenu html en fonction du type de média que contient le projet
      if(currentProject.type_media === "image"){
          projectContent = `
-         <div class="btn-x">
+         <div id="js-btn-close" class="btn-x">
             <i class="fas fa-times"></i>
          </div>
          <div class="half-item">
@@ -100,7 +100,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
      }
      else{
          projectContent = `
-         <div class="btn-x">
+         <div id="js-btn-close" class="btn-x">
             <i class="fas fa-times"></i>
          </div>
          <div class="half-item">
@@ -132,9 +132,15 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
      addContentToContainer();
  }
 
+ /**
+  * ajoute le contenu créé dans createProjectContent() dans le content container et ajoute l'event listener pour le fermer
+  */
 function addContentToContainer(){
     contentContainer.innerHTML = projectContent;
-     containerShowProject.style.display = "flex";
+    containerShowProject.style.display = "flex";
+    document.querySelector("#js-btn-close").addEventListener("click", (e)=>{
+        containerShowProject.style.display = "none"
+    });
 }
 
  /**

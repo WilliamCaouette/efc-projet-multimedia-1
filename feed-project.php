@@ -70,7 +70,7 @@
                     </a>
                 </div>
 
-                <div class="btn-x">
+                <div id="js-btn-close-form" class="btn-x">
                     <i class="fas fa-times"></i>
                 </div>
 
