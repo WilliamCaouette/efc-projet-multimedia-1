@@ -11,9 +11,9 @@
 }
 
 .col-25 {
-    flex-basis: 24%;
+    flex-basis: 15vw;
     border: 3px solid #ff6646;
-    height: 10vh;
+    height: 15vw;
     background-position: center;
     border-radius: 25px;
     overflow: hidden;
