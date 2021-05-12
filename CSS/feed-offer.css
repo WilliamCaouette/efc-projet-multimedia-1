@@ -4,13 +4,16 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 2% auto;
-    border-radius: 80px;
+    border-radius: 50px;
     overflow: hidden;
     border: 3px solid #ff6646;
+    padding: 5%;
 }
 
 .col-25 {
     flex-basis: 24%;
+    border: 3px solid #ff6646;
+    border-radius: 5px;
 }
 
 .col-75 {
