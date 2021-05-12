@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-12 10:16:24
+ * Last modified  : 2021-05-12 14:17:42
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -161,4 +161,5 @@ function addContentToContainer(){
     .then(reponse => reponse.text()) 
     .then(json => console.log(json))
     .catch(erreur => console.log(erreur));
+    document.querySelector(".img-like").classList.add("like-selected");
  }
