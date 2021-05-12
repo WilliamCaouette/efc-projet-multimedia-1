@@ -1,7 +1,11 @@
 {{#offer}} 
 <div class="offer" data-projet="{{id_emploie}}">
-    <img data-projet="{{id_emploie}}" src="images-post/{{url_media}}">
-    <h2 data-projet="{{id_emploie}}">{{titre}}</h2>
-    <p data-projet="{{id_emploie}}">{{description}}</p>
+    <div class="col-25">
+       <img data-projet="{{id_emploie}}" src="images-post/{{url_media}}" class="media-fluide"> 
+    </div>
+    <div class="col-75">
+        <h2 data-projet="{{id_emploie}}">{{titre}}</h2>
+        <p data-projet="{{id_emploie}}">{{description}}</p> 
+    </div>  
 </div>
 {{/offer}}
