@@ -198,6 +198,9 @@ li {
   width: 50%;
   height: auto;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
 
 input[type="search"] {
@@ -283,7 +286,6 @@ input[type="search"] {
   color: #f0f1f5;
   background: #ff6646;
 }
-
 
 /*-------------Espace du formulaire (pop-up) de publication de projet------------------*/
 .container-container {
@@ -425,7 +427,7 @@ textarea {
 .like-selected {
   background-color: #ff6646;
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
 }
 
 .fa-heart {

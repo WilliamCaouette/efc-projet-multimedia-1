@@ -51,7 +51,7 @@
     </div>
 
     <div class="pub-container">
-        <img src="media/AirCanada-banner.jpg" alt="pub aircanada">
+        <img src="media/AirCanada-banner.jpg" alt="pub aircanada" class="fluide">
     </div>
 
     <main class="main-content">
