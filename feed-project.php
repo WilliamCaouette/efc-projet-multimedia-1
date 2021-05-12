@@ -129,6 +129,11 @@
         <section id="js-feed-project" class="feed-project"></section>
 
         <div id="js-container-show-project" class="container-container">
+            <div class="pub-container">
+                <a href="https://zoom.us/" target="_blank">
+                    <img src="media/zoom-banner.jpg" alt="pub zoom" class="fluide">
+                </a>  
+            </div>
             <section id="js-show-project-content-container" class="show-project-container"></section>        
         </div>       
     </main>
