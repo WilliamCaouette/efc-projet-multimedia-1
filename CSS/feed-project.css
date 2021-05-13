@@ -491,6 +491,10 @@ textarea {
     width: 100%;
   }
 
+  .menu {
+    margin: 20% auto;
+  }
+
   .pub-container {
     width: 70%;
   }
