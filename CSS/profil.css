@@ -17,3 +17,17 @@
     border-bottom: 2px #ff6646 solid;
     color: #ff6646;
 }
+
+/*----- Espace Responsive -----*/
+@media screen and (max-width: 900px) {
+
+    .profil {
+        display: block;
+    }
+
+    .col-30 {
+        width: 70%;
+        margin: auto;
+    }
+}
+
