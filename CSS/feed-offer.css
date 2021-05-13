@@ -9,6 +9,8 @@
     border: 3px solid #ff6646;
     padding: 3%;
     color: #ff6646;
+    cursor: pointer;
+    transition: 250ms ease all;
 }
 
 .offer:hover {
