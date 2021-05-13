@@ -135,7 +135,7 @@ main {
 }
 
 /*----- Espace Responsive --------*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
   .banner-video {
     display: none;
@@ -144,6 +144,10 @@ main {
   .formulaire-authentification {
     height: 100vh;
     width: 100vw;
+  }
+
+  .button {
+    margin-top: 10%;
   }
 }
 
