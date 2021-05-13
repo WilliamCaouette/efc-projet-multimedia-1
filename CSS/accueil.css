@@ -1,12 +1,9 @@
-/* Les googles fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://use.typekit.net/owd7oyt.css");
 * {
   box-sizing: border-box;
 }
-
-/*-- Classe Basique --*/
 
 body {
   margin: 0;
@@ -19,10 +16,6 @@ body {
 main {
   position: relative;
 }
-
-/*-- Classe Perso --*/
-
-/* Logo */
 
 .logo h1 {
   margin-top: 25%;
@@ -38,8 +31,6 @@ main {
   flex-basis: 20%;
 }
 
-/* Vidéo */
-
 .banner-video {
   width: 100%;
 }
@@ -48,8 +39,6 @@ main {
   width: 100%;
   height: auto;
 }
-
-/* Formulaire */
 
 .formulaire-authentification {
   position: absolute;
@@ -68,8 +57,6 @@ main {
   width: 100%;
 }
 
-/* Input pour l'identifiant */
-
 .box-identification {
   transform: translateX(-25%);
 }
@@ -86,8 +73,6 @@ main {
   border: none;
 }
 
-/* Input pour le mot de passe  */
-
 .formulaire-authentification form input[type="password"] {
   padding: 10% 20%;
   border-radius: 5px;
@@ -95,8 +80,6 @@ main {
   background: #f0f1f5;
   box-shadow: inset 5px 5px 10px #d8e0eb, inset -5px -5px 10px #ffffff;
 }
-
-/* Input pour le submit du bouton connexion */
 
 .formulaire-authentification form input[type="submit"] {
   width: 60%;
@@ -108,8 +91,6 @@ main {
   background: #f0f1f5;
   box-shadow: 5px 5px 10px #d8e0eb, -5px -5px 10px #ffffff;
   cursor: pointer;
-  /* La transition avec le hoover ne fonctionne pas à cause du inset du box-shadow */
-  transition: all 450ms ease-in;
 }
 
 .formulaire-authentification form input[type="submit"]:hover {
@@ -142,7 +123,7 @@ main {
   }
 
   .formulaire-authentification {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
   }
 
