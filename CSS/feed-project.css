@@ -494,6 +494,10 @@ textarea {
     width: 70%;
   }
 
+  .feed-project {
+    justify-content: center;
+  }
+
   .projet {
     flex-basis: 90%;
   }
@@ -504,5 +508,12 @@ textarea {
 
   .fa-bars {
     margin-right: 8%;
+  }
+
+  .show-project-container {
+    flex-direction: column;
+    height: fit-content;
+    padding: 10%;
+    overflow: scroll;
   }
 }
