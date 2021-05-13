@@ -195,7 +195,7 @@ input[type="submit"]:hover {
 }
 
 /*Espace Responsive */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
 
     .logo h1 {
         width: 100%;
@@ -216,6 +216,7 @@ input[type="submit"]:hover {
     .container-bio {
         padding: 0;
         margin-top: 5%;
+        flex-direction: column;
     }
 
     .container-infos div {
