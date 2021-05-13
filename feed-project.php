@@ -52,7 +52,7 @@
 
     <div class="pub-container">
         <a href="https://www.aircanada.com/ca/en/aco/home.html#/" target="_blank">
-            <img src="media/AirCanada-banner.jpg" alt="pub aircanada" class="fluide">
+            <img src="media/AirCanada-banner.jpg" alt="pub aircanada" class="media-fluide">
         </a>  
     </div>
 
@@ -62,7 +62,7 @@
         <section class="container-container">
             <div class="pub-container">
                 <a href="https://www.microsoft.com/fr-ca/microsoft-365/project/compare-microsoft-project-management-software?tab=1&ef_id=dc18e21dad901a43539182819cc55c2e:G:s&OCID=AID2100137_SEM_dc18e21dad901a43539182819cc55c2e:G:s&lnkd=Bing_O365SMB_App&msclkid=dc18e21dad901a43539182819cc55c2e" target="_blank">
-                    <img src="media/microsoft-project-banner.jpg" alt="pub microsoft" class="fluide">
+                    <img src="media/microsoft-project-banner.jpg" alt="pub microsoft" class="media-fluide">
                 </a>  
             </div>
 
@@ -131,7 +131,7 @@
         <div id="js-container-show-project" class="container-container">
             <div class="pub-container">
                 <a href="https://zoom.us/" target="_blank">
-                    <img src="media/zoom-banner.jpg" alt="pub zoom" class="fluide">
+                    <img src="media/zoom-banner.jpg" alt="pub zoom" class="media-fluide">
                 </a>  
             </div>
             <section id="js-show-project-content-container" class="show-project-container"></section>        

@@ -478,8 +478,31 @@ textarea {
   .fa-bars {
     margin-right: 5%;
   }
+
+  .show-project-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 700px) {
 
+  nav {
+    width: 100%;
+  }
+
+  .pub-container {
+    width: 70%;
+  }
+
+  .projet {
+    flex-basis: 90%;
+  }
+
+  .btn-publier-projet {
+    width: 35%;
+  }
+
+  .fa-bars {
+    margin-right: 8%;
+  }
 }
