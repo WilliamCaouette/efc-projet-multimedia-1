@@ -149,5 +149,9 @@ main {
   .button {
     margin-top: 10%;
   }
+
+  body {
+    overflow: scroll;
+  }
 }
 
