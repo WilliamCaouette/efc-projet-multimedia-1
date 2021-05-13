@@ -133,3 +133,17 @@ main {
 .formulaire-authentification form input {
   margin: 5% 0%;
 }
+
+/*----- Espace Responsive --------*/
+@media screen and (max-width: 900px) {
+
+  .banner-video {
+    display: none;
+  }
+
+  .formulaire-authentification {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
