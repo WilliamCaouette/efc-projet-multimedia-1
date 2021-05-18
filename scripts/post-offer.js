@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-18 15:19:11
+ * Last modified  : 2021-05-18 15:20:57
  */
  const contentContainer = document.querySelector("#js-show-offer-content-container");
  const containerShowProject = document.querySelector("#js-container-show-offer");
@@ -32,7 +32,6 @@
   */
  function showOffer(e){
      getcurrentOffer(e.target.dataset.offer);
-     console.log("click")
  }
  
  
@@ -44,7 +43,6 @@
     offers.forEach(offer => {
         if(offer.id_emploie == idOffer){
             currentOffer = offer;
-            console.log(offer.id_emploie);
             getProjectCreator()
         }else{
             return;
