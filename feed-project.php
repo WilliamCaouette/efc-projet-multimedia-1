@@ -81,7 +81,7 @@
                 <form action="treatment/post-project-treatment.php" enctype="multipart/form-data" method="post">
                     <div>
                         <div class="col-25">
-                            <label for="title">Titre du projet <span class="icone-obligatoire">*</span></label>
+                            <label for="title">Titre de l'emploie *<span class="icone-obligatoire">*</span></label>
                         </div>
                         <div class="col-75">
                             <input type="text" name="title" placeholder="titre">
@@ -107,11 +107,6 @@
                                     <input type="radio" name="type" id="image" checked value="image"> image
                                     <label for="url">Url Image<span class="icone-obligatoire">*</span></label>
                                     <input name="url_image" id="url" type="file">
-                                </div>
-                                <div class="choix-video">
-                                    <input type="radio" name="type" id="video" value="video"> video
-                                    <label for="url">Url Vidéo Youtube<span class="icone-obligatoire">*</span></label>
-                                    <input name="url_video" id="url" type="text">
                                 </div>
                             </div>                    
                         </div>

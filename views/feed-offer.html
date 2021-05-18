@@ -1,10 +1,10 @@
 {{#offer}} 
-<div class="offer" data-projet="{{id_emploie}}">
-    <div class="formulaire-25" style="background-image: url('images-post/{{url_media}}')">
+<div class="offer" data-offer="{{id_emploie}}">
+    <div class="formulaire-25" data-offer="{{id_emploie}}" style="background-image: url('images-post/{{url_media}}')">
     </div>
-    <div class="formulaire-75">
-        <h2 data-projet="{{id_emploie}}">{{titre}}</h2>
-        <p data-projet="{{id_emploie}}">{{description}}</p> 
+    <div data-offer="{{id_emploie}}" class="formulaire-75">
+        <h2 data-offer="{{id_emploie}}">{{titre}}</h2>
+        <p data-offer="{{id_emploie}}">{{description}}</p> 
     </div>  
 </div>
 {{/offer}}
