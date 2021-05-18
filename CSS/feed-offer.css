@@ -18,7 +18,7 @@
     color: #f0f1f5;
 }
 
-.col-25 {
+.formulaire-25 {
     flex-basis: 15vw;
     border: 3px solid #ff6646;
     height: 15vw;
@@ -28,13 +28,13 @@
     background-size: cover;
 }
 
-.col-75 {
+.formulaire-75 {
     flex-basis: 74%;
 }
 
 /*----- Espace Responsive -----*/
 @media screen and (max-width: 900px) {
-    .col-25 {
+    .formulaire-25 {
         flex-basis: 80vw;
         height: 80vw;
     }
