@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-21 10:38:58
+ * Last modified  : 2021-05-21 10:43:17
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -132,7 +132,7 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
  }
 
  /**
-  * ajoute le contenu créé dans createProjectContent() dans le content container et ajoute l'event listener pour le fermer
+  * @summary ajoute le contenu créé dans createProjectContent() dans le content container et ajoute l'event listener pour le fermer
   */
 function addContentToContainer(){
     contentContainer.innerHTML = projectContent;

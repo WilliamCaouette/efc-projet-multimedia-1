@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-21 10:36:37
+ * Last modified  : 2021-05-21 10:42:57
  */
  const contentContainerOffer = document.querySelector("#js-show-offer-content-container");
  const containerShowOffer = document.querySelector("#js-container-show-offer");
@@ -119,7 +119,7 @@
  }
 
  /**
-  * ajoute le contenu créé dans createOfferContent() dans le content container et ajoute l'event listener pour le fermer
+  * @summary ajoute le contenu créé dans createOfferContent() dans le content container et ajoute l'event listener pour le fermer
   */
 function addOfferToContainer(){
     contentContainerOffer.innerHTML = offersContent;

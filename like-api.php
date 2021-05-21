@@ -24,7 +24,7 @@
             http_response_code(503);
 
             echo(json_encode(
-                    array("message"=>"une erreur est survenue lors de la création")
+                    array("message"=>"une erreur est survenue lors de la création du like")
                 ));
         }
     }
