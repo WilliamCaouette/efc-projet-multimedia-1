@@ -5,7 +5,7 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-12 14:17:42
+ * Last modified  : 2021-05-21 10:38:58
  */
 const contentContainer = document.querySelector("#js-show-project-content-container");
  const containerShowProject = document.querySelector("#js-container-show-project");
@@ -43,7 +43,6 @@ const contentContainer = document.querySelector("#js-show-project-content-contai
  function getCurrentProject(idProjet){
     projects.forEach(projet => {
         if(projet.id_projet == idProjet){
-            console.log(projet)
             currentProject = projet;
             getProjectCreator()
         }else{

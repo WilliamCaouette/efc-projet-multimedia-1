@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="CSS/profil.css">
     <link rel="stylesheet" href="CSS/feed-project.css">
+    <link rel="stylesheet" href="CSS/feed-offer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+    <script src="scripts/post-offer.js" defer></script>
+    <script src="scripts/post-project.js" defer></script>
     <script src="scripts/profil.js" defer></script>
     <script src="scripts/menu-burger.js" defer></script>
-    <script src="scripts/post-project.js" defer></script>
     <script src="scripts/afficher-form-publication.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -110,7 +112,13 @@
         <section id="js-feed-project" class="feed-project"></section>
         <div id="js-container-show-project" class="container-container">
             <section id="js-show-project-content-container" class="show-project-container"></section>        
+        </div>
+        <div id="js-container-show-offer" class="container-container">
+            <section id="js-show-offer-content-container" class="show-project-container"></section>        
         </div> 
+        <section id="js-feed-offer">
+        
+        </section> 
     </main>
     <section class="bas-de-page-static">
         <button id="js-btn-publier" class="btn-publier-projet"><b>Publier</b></button>

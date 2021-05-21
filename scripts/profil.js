@@ -5,11 +5,12 @@
  * @author N.Prevel & William Caouette
  *
  * Created at     : 2021-04-25 19:48:30
- * Last modified  : 2021-04-28 07:57:28
+ * Last modified  : 2021-05-21 10:37:45
  */
 
-const viewsContainer = document.querySelector("#js-feed-project");
-const value = document.querySelector("#js-value").value;
+const viewsContainerProject = document.querySelector("#js-feed-project");
+const viewsContainerOffer = document.querySelector("#js-feed-offer");
+const profilId = document.querySelector("#js-value").value;
 let projectsContainers;
 
 
@@ -23,17 +24,41 @@ function fetchView() {
             
         })
         .then((html) => {
-            fetch("project-api.php?id_user=" + value)
+            fetch("project-api.php?id_user=" + profilId)
                 .then((response) => {
                     return response.json();
                 })
                 .then((json) => {
-                    console.log(json);
-                    viewsContainer.innerHTML = Mustache.render(html, json);
-                    projectsContainers = document.querySelectorAll(".projet");
-                    projectsContainers.forEach(project=>{
-                        project.addEventListener("click", showProject);
-                    })
-                });
+                    //s'il reçoit un message de la part de l'api alors ils récupère le contenu d'entreprise (ça veut dire que c'est une entreprise et non un utilisateur)
+                    if(json.message  == "aucun projets n'a été trouver"){
+                        fetch("views/feed-offer.html")
+                        .then((reponse) => {
+                            return reponse.text();
+                            
+                        })
+                        .then((html) => {
+                            fetch("offer-api.php?id_user=" + profilId)
+                                .then((response) => {
+                                    return response.json();
+                                })
+                                .then((json) => {
+                                    viewsContainerOffer.innerHTML = Mustache.render(html, json);
+                                    offerContainers = document.querySelectorAll(".offer");
+                                    offerContainers.forEach(offer=>{
+                                        offer.addEventListener("click", showOffer);
+                                    })
+                                })
+                        });
+
+                    }else{
+                        viewsContainerProject.innerHTML = Mustache.render(html, json);
+                        projectsContainers = document.querySelectorAll(".projet");
+                        projectsContainers.forEach(project=>{
+                            project.addEventListener("click", showProject);
+                        })
+                    }
+                    
+                })
         });
+        
 }fetchView()

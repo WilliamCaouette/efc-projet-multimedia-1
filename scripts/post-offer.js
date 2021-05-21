@@ -5,10 +5,10 @@
  * @author William Caouette
  *
  * Created at     : 2021-04-25 12:21:10 
- * Last modified  : 2021-05-18 15:20:57
+ * Last modified  : 2021-05-21 10:36:37
  */
- const contentContainer = document.querySelector("#js-show-offer-content-container");
- const containerShowProject = document.querySelector("#js-container-show-offer");
+ const contentContainerOffer = document.querySelector("#js-show-offer-content-container");
+ const containerShowOffer = document.querySelector("#js-container-show-offer");
  let offers;
  let offersContent;
  let currentOffer;
@@ -43,7 +43,7 @@
     offers.forEach(offer => {
         if(offer.id_emploie == idOffer){
             currentOffer = offer;
-            getProjectCreator()
+            getOfferCreator()
         }else{
             return;
         }
@@ -52,19 +52,19 @@
  /**
   * @summary récupère les informations sur le créateur du offer selectionner
   */
- function getProjectCreator(){
+ function getOfferCreator(){
     fetch("user-api.php?id_user=" + currentOffer.id_user)
     .then(response=>{return response.json()})
     .then(json =>{
         currentOfferCreator = json.user[0];
-        createProjectContent();
+        createOfferContent();
     })
  }
  
  /**
   * @summary créé le contenu HTML incluant les informations du offer qui sera ensuite injecter dans notre conteneur
   */
- function createProjectContent(){
+ function createOfferContent(){
  
      //crée le contenu html en fonction du type de média que contient le offer
      if(currentOffer.type_media === "image"){
@@ -115,16 +115,16 @@
             </section>
         </div>`;
      }
-     addContentToContainer();
+     addOfferToContainer();
  }
 
  /**
-  * ajoute le contenu créé dans createProjectContent() dans le content container et ajoute l'event listener pour le fermer
+  * ajoute le contenu créé dans createOfferContent() dans le content container et ajoute l'event listener pour le fermer
   */
-function addContentToContainer(){
-    contentContainer.innerHTML = offersContent;
-    containerShowProject.style.display = "flex";
+function addOfferToContainer(){
+    contentContainerOffer.innerHTML = offersContent;
+    containerShowOffer.style.display = "flex";
     document.querySelector("#js-btn-close").addEventListener("click", (e)=>{
-        containerShowProject.style.display = "none"
+        containerShowOffer.style.display = "none"
     });
 }

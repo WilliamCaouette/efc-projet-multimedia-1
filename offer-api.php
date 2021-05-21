@@ -1,5 +1,5 @@
 <?php
-    include "db.php";
+    include "DB.php";
     
     //vérifie si un utilisateur est préciser sinon retourner tout les projets
     if(!isset($_GET['id_user'])){
@@ -7,7 +7,7 @@
         $sth = $dbh->prepare($requete);
     }
     else{
-        $requete = "SELECT SELECT `id_emploie`, `titre`, `id_user`, `type_media`, `url_media`, `description` FROM `emploies` WHERE `id_user` = :id_user ORDER BY `id_emploie` DESC";
+        $requete = "SELECT `id_emploie`, `titre`, `id_user`, `type_media`, `url_media`, `description` FROM `emploies` WHERE `id_user` = :id_user ORDER BY `id_emploie` DESC";
         $sth = $dbh->prepare($requete);
         $sth->bindParam(':id_user', $_GET['id_user'], PDO::PARAM_INT);
     }
